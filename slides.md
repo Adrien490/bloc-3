@@ -122,9 +122,7 @@ graph LR
 
 # Outil de planification (C3.1) — Suite
 
-## Board Kanban & Milestones
-
-### Board Kanban
+## Board Kanban
 
 | To do          | In progress | Code review | Done              |
 | -------------- | ----------- | ----------- | ----------------- |
