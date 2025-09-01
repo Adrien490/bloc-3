@@ -48,48 +48,18 @@ Situer l'audience (jury pro) et l'objectif : gestion de projet + démo.
 
 <div>
 
-### **C3.1 Planifier** → Slides 3–9
-
-- Méthodologie Scrum
-- Outils de planification
-- Architecture & stack
-- Planning détaillé S1→S6
-
-### **C3.2.1 Piloter** → Slides 10–14
-
-- Instances & suivi
-- Pipeline CI/CD
-- Indicateurs de pilotage
-
-### **C3.2.2 Arbitrer** → Slide 15
-
-- Cas réel documenté
+### **C3.1 Planifier**
+### **C3.2.1 Piloter** 
+### **C3.2.2 Arbitrer**
 
 </div>
 
 <div>
 
-### **C3.3.1 Manager l'équipe** → Slides 16–18
-
-- Affectation des missions
-- Styles managériaux
-- Outils de communication
-
-### **C3.3.2 Évaluer & développer** → Slides 19–21
-
-- Grille d'évaluation
-- Plan de développement
-
-### **C3.4.1 Suivi client & indicateurs** → Slides 22–25
-
-- Comptes rendus
-- Points de validation
-
-### **C3.4.2 Démonstration** → Slides 26–28
-
-- Scénarios Visiteur & Admin
-
-### **Annexes** → Slides 29–34
+### **C3.3.1 Manager l'équipe**
+### **C3.3.2 Évaluer & développer**
+### **C3.4.1 Suivi client & indicateurs**
+### **C3.4.2 Démonstration**
 
 </div>
 
