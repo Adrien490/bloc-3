@@ -424,27 +424,19 @@ Montrer 1 carte « Done » liée à une PR et au déploiement Preview.
 
 # Pipeline CI/CD (C3.2.1)
 
-<div class="flex items-start justify-between">
-
-<div>
-
 ## Workflow Git
 
-</div>
-
-<div class="ml-8">
+<div class="mt-8">
 
 ```mermaid
 graph LR
-    A[Branch] --> B[Build]
-    B --> C{Tests?}
+    A[feature/* / fix/*] --> B[Build Vercel]
+    B --> C{Tests OK?}
     C -->|✅| D[Preview]
-    C -->|❌| E[Fail]
-    D --> F[Merge]
-    F --> G[Prod]
+    C -->|❌| E[Échec]
+    D --> F[Merge main]
+    F --> G[Prod + migrate]
 ```
-
-</div>
 
 </div>
 
