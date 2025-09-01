@@ -435,14 +435,13 @@ Montrer 1 carte « Done » liée à une PR et au déploiement Preview.
 <div class="ml-8">
 
 ```mermaid
-graph TB
-    A[feature/* / fix/*] --> B[Build Vercel]
-    B --> C{Tests OK?}
+graph LR
+    A[Branch] --> B[Build]
+    B --> C{Tests?}
     C -->|✅| D[Preview]
-    C -->|❌| E[Échec]
-    D --> F[Recette + Sentry]
-    F --> G[Merge main]
-    G --> H[Prod + migrate]
+    C -->|❌| E[Fail]
+    D --> F[Merge]
+    F --> G[Prod]
 ```
 
 </div>
