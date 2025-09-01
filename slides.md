@@ -44,26 +44,19 @@ Situer l'audience (jury pro) et l'objectif : gestion de projet + démo.
 
 # Sommaire aligné au référentiel
 
-<div class="grid grid-cols-2 gap-8 mt-8">
-
-<div>
-
 ### **C3.1 Planifier**
-### **C3.2.1 Piloter** 
+
+### **C3.2.1 Piloter**
+
 ### **C3.2.2 Arbitrer**
 
-</div>
-
-<div>
-
 ### **C3.3.1 Manager l'équipe**
+
 ### **C3.3.2 Évaluer & développer**
+
 ### **C3.4.1 Suivi client & indicateurs**
+
 ### **C3.4.2 Démonstration**
-
-</div>
-
-</div>
 
 <!--
 Préciser que chaque bloc du référentiel est couvert par au moins une slide dédiée.
