@@ -155,6 +155,12 @@ graph LR
 - **Release Plan** par Sprint (Mars → Juin 2025)
 - **Rétroplanning** haut niveau avec dépendances et chemin critique
 
+---
+
+# Outil de planification (C3.1) — Suite
+
+## Board Kanban & Milestones
+
 ### Board Kanban
 
 | To do          | In progress | Code review | Done              |
@@ -280,6 +286,10 @@ Pointer comment la séparation a simplifié la recette et les tests.
 
 </div>
 
+---
+
+# Planning détaillé (C3.1) — Pilotage & Dépendances
+
 ## Phases & pilotage
 
 - **Phases** : Étude → Conception → Réalisation → Recette → Déploiement
@@ -303,11 +313,7 @@ Afficher les dates exactes adaptées à votre historique si différent; pointer 
 
 # Découpage en lots & user stories (C3.1)
 
-<div class="grid grid-cols-2 gap-6">
-
-<div>
-
-### Lots fonctionnels
+## Lots fonctionnels
 
 **Lot 1 Vitrine** : pages, SEO, contenus
 
@@ -319,17 +325,17 @@ Afficher les dates exactes adaptées à votre historique si différent; pointer 
 
 **Lot 5 Qualité & RGPD** : tests, a11y, perf, registre
 
-</div>
+---
 
-<div>
+# User Stories — Exemple détaillé (C3.1)
 
-### Exemple User Story (US-VIS-02)
+## User Story (US-VIS-02)
 
 **En tant que** visiteur,  
 **Je veux** envoyer une demande de contact avec pièces jointes  
 **Afin de** préparer mon suivi.
 
-#### Critères d'acceptation
+### Critères d'acceptation
 
 - ✅ Validation Zod
 - ✅ ≤3 fichiers
@@ -339,13 +345,9 @@ Afficher les dates exactes adaptées à votre historique si différent; pointer 
 - ✅ E-mail Resend reçu
 - ✅ Entrée visible en dashboard statut = "Nouveau"
 
-#### Preuves
+### Preuves
 
 Issue #… → PR #… → Preview Vercel → Prod (SHA …)
-
-</div>
-
-</div>
 
 <!--
 Montrer 1 user story + critères d'acceptation + liens.
@@ -461,11 +463,7 @@ Montrer 1 carte « Done » liée à une PR et au déploiement Preview.
 
 # Pipeline CI/CD (C3.2.1)
 
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-### Workflow Git
+## Workflow Git
 
 ```mermaid
 graph TB
@@ -478,11 +476,11 @@ graph TB
     G --> H[Prod + migrate]
 ```
 
-</div>
+---
 
-<div>
+# Pipeline CI/CD (C3.2.1) — Automatisation
 
-### Étapes automatisées
+## Étapes automatisées
 
 1. **Build Vercel**
    - Lint (ESLint)
@@ -501,10 +499,6 @@ graph TB
 - Validation automatique
 - Feedback rapide
 - Déploiement sécurisé
-
-</div>
-
-</div>
 
 <!--
 Souligner le gain de temps en démo/validation.
@@ -628,46 +622,28 @@ Les fichiers **.HEIC** (iPhone) ne sont pas traités par la chaîne d'upload (Up
 
 Impact potentiel sur la **qualité** (perte d'info), **délais** (Review S3), et **support** (tickets utilisateurs).
 
-<div class="grid grid-cols-3 gap-4 mt-6">
-
-<div>
-
-### Option 1 ✅
-
-**Réduire le périmètre**
+### Option 1 ✅ — Réduire le périmètre
 
 - Types garantis (jpg/png/pdf)
 - Message d'aide
 - Validation client
 - **→ Livraison maintenue**
 
-</div>
-
-<div>
-
-### Option 2
-
-**Décaler la livraison**
+### Option 2 — Décaler la livraison
 
 - Repousser Review d'1 semaine
 - Implémenter conversion serveur
 - **→ Retard Sprint Review**
 
-</div>
+---
 
-<div>
+# Arbitrage (C3.2.2) — Décision & Critères
 
-### Option 3
-
-**Renforcer l'équipe**
+## Option 3 — Renforcer l'équipe
 
 - Recours externe ponctuel
 - Lib conversion HEIC → JPEG
 - **→ Coût/risque onboarding**
-
-</div>
-
-</div>
 
 ## Critères d'aide à la décision
 
