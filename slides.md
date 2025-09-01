@@ -1007,10 +1007,7 @@ Montrer avant/après si possible pour les améliorations.
 
 ---
 
-layout: center
-class: text-center
-
----
+<div class="text-center h-full flex flex-col justify-center">
 
 # Démo (C3.4.2)
 
@@ -1033,16 +1030,15 @@ class: text-center
   <p>📁 Test upload avec gestion d'erreurs</p>
 </div>
 
+</div>
+
 <!--
 Verrouiller réseau/onglets avant la démo; garder un jeu de fichiers test.
 -->
 
 ---
 
-layout: center
-class: text-center
-
----
+<div class="text-center h-full flex flex-col justify-center">
 
 # Démo (C3.4.2)
 
@@ -1069,6 +1065,8 @@ class: text-center
   <p>📊 Bénéfices métier : tri plus rapide, traçabilité, archivage</p>
   <p>🔍 Filtres par statut, date, type de demande</p>
   <p>📋 Workflow de traitement optimisé</p>
+</div>
+
 </div>
 
 <!--
@@ -1302,10 +1300,7 @@ Dire explicitement au jury que la grille est couverte.
 
 ---
 
-layout: center
-class: text-center
-
----
+<div class="text-center h-full flex flex-col justify-center">
 
 # Clôture & Questions
 
@@ -1331,6 +1326,8 @@ class: text-center
 
 <div class="mt-8 text-lg">
   Questions ?
+</div>
+
 </div>
 
 <!--
