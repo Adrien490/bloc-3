@@ -1006,10 +1006,8 @@ Montrer avant/après si possible pour les améliorations.
 -->
 
 ---
-
 layout: center
 class: text-center
-
 ---
 
 # Démo (C3.4.2)
@@ -1038,10 +1036,8 @@ Verrouiller réseau/onglets avant la démo; garder un jeu de fichiers test.
 -->
 
 ---
-
 layout: center
 class: text-center
-
 ---
 
 # Démo (C3.4.2)
@@ -1301,10 +1297,8 @@ Dire explicitement au jury que la grille est couverte.
 -->
 
 ---
-
 layout: center
 class: text-center
-
 ---
 
 # Clôture & Questions
