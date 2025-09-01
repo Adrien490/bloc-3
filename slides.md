@@ -424,7 +424,15 @@ Montrer 1 carte « Done » liée à une PR et au déploiement Preview.
 
 # Pipeline CI/CD (C3.2.1)
 
+<div class="flex items-start justify-between">
+
+<div>
+
 ## Workflow Git
+
+</div>
+
+<div class="ml-8">
 
 ```mermaid
 graph TB
@@ -436,6 +444,10 @@ graph TB
     F --> G[Merge main]
     G --> H[Prod + migrate]
 ```
+
+</div>
+
+</div>
 
 ---
 
