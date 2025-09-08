@@ -85,6 +85,10 @@ Préciser que chaque bloc du référentiel est couvert par au moins une slide d�
 | **Sprint Review**        | Hebdo présentiel     | -         | Démo increment Preview/Prod     |
 | **Sprint Retrospective** | Fin de sprint        | 20-30 min | Amélioration processus          |
 
+---
+
+# Méthodologie choisie (C3.1) — Scrum — Suite
+
 ### Artifacts
 
 - **Product Backlog** : Issues GitHub
@@ -128,6 +132,10 @@ graph LR
 | -------------- | ----------- | ----------- | ----------------- |
 | Issues futures | WIP ≤ 2     | PR review   | Merged & deployed |
 
+---
+
+# Outil de planification (C3.1) — Suite (2/2)
+
 ### Milestones
 
 - **S1** (04/03→15/03) : Cadrage
@@ -167,6 +175,14 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 - **Prisma ORM** - Base de données
 
 </div>
+
+</div>
+
+---
+
+# Architecture & stack (C3.1) — Suite
+
+<div class="grid grid-cols-2 gap-8">
 
 <div>
 
@@ -302,6 +318,12 @@ Afficher les dates exactes adaptées à votre historique si différent; pointer 
 - ✅ ≤3 fichiers
 - ✅ Chaque fichier ≤4MB
 - ✅ Types acceptés (jpg/png/pdf)
+
+---
+
+# User Stories — Exemple détaillé (C3.1) — Suite
+
+### Critères d'acceptation (suite)
 - ✅ Message succès
 - ✅ E-mail Resend reçu
 - ✅ Entrée visible en dashboard statut = "Nouveau"
@@ -454,8 +476,14 @@ graph LR
 
 2. **Preview** → recette + Sentry
 
-3. **Merge main** → Prod + `prisma migrate deploy`
+---
 
+# Pipeline CI/CD (C3.2.1) — Automatisation — Suite
+
+### Étapes automatisées (suite)
+
+3. **Merge main** → Prod + `prisma migrate deploy`
+ 
 4. **Rollback rapide** via Vercel
 
 ### Bénéfices
@@ -529,15 +557,19 @@ Ajouter captures datées (burndown/vélocité Trello, tableau budget, cycle time
 
 **Total** : 0€ (paliers gratuits respectés)
 
+</div>
+
+</div>
+
+---
+
+# Suivi coûts & ressources (C3.2.1) — Suite
+
 ### Capacité & risques
 
 - **WIP** : 1–2 max • **Disponibilité** : 20h/semaine
 - **Quotas dépassés** → optimisation/caching
 - **Surveillance** : alertes à 80%
-
-</div>
-
-</div>
 
 <!--
 Insérer mini-tableau mensuel avec chiffres réels.
@@ -585,6 +617,10 @@ Les fichiers **.HEIC** (iPhone) ne sont pas traités par la chaîne d'upload (Up
 ## Conséquences
 
 Impact potentiel sur la **qualité** (perte d'info), **délais** (Review S3), et **support** (tickets utilisateurs).
+
+---
+
+# Arbitrage (C3.2.2) — Cas réel documenté — Suite
 
 ### Option 1 ✅ — Réduire le périmètre
 
@@ -700,6 +736,14 @@ Expliquer l'auto-organisation et la priorisation.
 - Mention si sous-traitance future
 
 </div>
+
+</div>
+
+---
+
+# Styles managériaux utilisés (C3.3.1) — Suite
+
+<div class="grid grid-cols-2 gap-8">
 
 <div>
 
@@ -923,6 +967,10 @@ Exemple de 4-6 lignes anonymisé réel.
 </div>
 
 </div>
+
+---
+
+# Points de validation (C3.4.1) — Suite
 
 ### Processus validation
 
@@ -1243,9 +1291,7 @@ Seuil action : score ≥ 6
 Indiquer où se trouvent les annexes (fin du deck / repo).
 -->
 
----
-
-# Vérification des compétences (checklist)
+<!--
 
 <div class="grid grid-cols-2 gap-8">
 
