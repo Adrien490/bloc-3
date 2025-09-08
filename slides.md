@@ -294,7 +294,7 @@ Pointer comment la séparation a simplifié la recette et les tests.
 ### Dépendances identifiées
 
 ```mermaid
-graph TB
+graph LR
     A[S3: Formulaire] --> B[S5: Dashboard]
     C[S4: Auth] --> B
     B --> D[S6: Production]
@@ -1256,5 +1256,4 @@ Rappeler scripts npm (test, coverage, lighthouse:prod, a11y:prod).
 </div>
 
 </div>
-
 
