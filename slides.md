@@ -1252,9 +1252,6 @@ Rappeler scripts npm (test, coverage, lighthouse:prod, a11y:prod).
 
 </div>
 
-<!--
-Pourquoi ces métadonnées rassurent le commanditaire.
--->
 
 ---
 
@@ -1290,61 +1287,6 @@ Seuil action : score ≥ 6
 <!--
 Indiquer où se trouvent les annexes (fin du deck / repo).
 -->
-
-<!--
-
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-### ✅ Éliminatoires
-
-**C3.1 Planifier** ✅ Slides 3–9
-
-- Méthodologie Scrum
-- Outils GitHub Projects
-- Architecture & planning détaillé
-
-**C3.2.1 Piloter** ✅ Slides 10–14
-
-- Instances & CI/CD
-- Indicateurs & risques
-
-**C3.4.2 Démonstration** ✅ Slides 26–28
-
-- Scénarios complets
-
-</div>
-
-<div>
-
-### ✅ Autres compétences
-
-**C3.2.2 Arbitrages** ✅ Slide 15  
-_(Cas réel HEIC documenté)_
-
-**C3.3.1 Management** ✅ Slides 16–18  
-_(Solo + relation client)_
-
-**C3.3.2 Compétences** ✅ Slides 19–21  
-_(Grille consolidée)_
-
-**C3.4.1 CR & indicateurs** ✅ Slides 22–25  
-_(Suivi complet)_
-
-</div>
-
-</div>
-
-### ✅ Référentiel 100% couvert
-
-Chaque compétence du bloc C3 est illustrée par des preuves concrètes et des exemples du projet Diet-Clic.
-
-<!--
-Dire explicitement au jury que la grille est couverte.
--->
-
----
 
 <div class="text-center h-full flex flex-col justify-center">
 
