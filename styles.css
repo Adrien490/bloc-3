@@ -1,0 +1,103 @@
+:root {
+  --slidev-theme-primary: #2563eb; /* blue-600 */
+}
+
+.slidev-layout {
+  font-size: 1.05rem;
+  line-height: 1.68;
+  max-width: 1100px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.01em;
+}
+
+h1 { font-weight: 800; font-size: 2.6rem; margin-bottom: .25rem; }
+h2 { font-weight: 700; font-size: 1.8rem; margin-top: .25rem; }
+h3 { font-weight: 600; font-size: 1.25rem; margin-top: .5rem; }
+
+ul, ol {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+ul li, ol li {
+  margin: 0.25rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+th {
+  background-color: #f8fafc;
+  font-weight: 700;
+}
+
+th, td {
+  padding: 0.55rem 0.75rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+blockquote {
+  border-left: 3px solid var(--slidev-theme-primary);
+  padding-left: 0.75rem;
+  color: #475569;
+}
+
+pre {
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+}
+
+hr { opacity: 0.25; }
+
+/* Utility helpers (optional) */
+.kpi {
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  display: inline-block;
+  border: 1px solid #e2e8f0;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.columns-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.centered { text-align: center; }
+
+/* Accent heading underline */
+h1::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin-top: 8px;
+  border-radius: 999px;
+  background: var(--slidev-theme-primary);
+}
+
+/* Lists tighter spacing */
+li { margin-left: .5rem; }

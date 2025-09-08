@@ -1,7 +1,6 @@
 ---
-theme: seriph
-background: https://images.pexels.com/photos/4386464/pexels-photo-4386464.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop
-class: text-center
+theme: default
+class: text-left
 highlighter: shiki
 lineNumbers: false
 info: |
@@ -11,8 +10,14 @@ info: |
   Projet : Application web pour Diététicienne Nutritionniste
 drawings:
   persist: false
-css: unocss
+css:
+  - unocss
+  - styles.css
 wakeLock: "build"
+transition: slide-left
+fonts:
+  sans: Inter
+  mono: JetBrains Mono
 ---
 
 # Diet-Clic
@@ -75,6 +80,10 @@ Préciser que chaque bloc du référentiel est couvert par au moins une slide d�
 - **Product Owner** = commanditaire
 - **Scrum Master** = Adrien (facilitateur)
 - **Dev Team** = Adrien
+
+---
+
+# Méthodologie choisie (C3.1) — Scrum — Événements
 
 ### Événements
 
