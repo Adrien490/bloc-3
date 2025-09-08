@@ -66,7 +66,7 @@ Préciser que chaque bloc du référentiel est couvert par au moins une slide d�
 
 ---
 
-# Méthodologie choisie (C3.1) — Scrum
+# Méthodologie choisie (C3.1) — Scrum (1/3)
 
 ## Approche Agile Scrum adaptée à un développeur unique
 
@@ -80,7 +80,7 @@ Préciser que chaque bloc du référentiel est couvert par au moins une slide d�
 
 ---
 
-# Méthodologie choisie (C3.1) — Scrum — Événements
+# Méthodologie choisie (C3.1) — Scrum — Événements (2/3)
 
 ### Événements
 
@@ -93,7 +93,7 @@ Préciser que chaque bloc du référentiel est couvert par au moins une slide d�
 
 ---
 
-# Méthodologie choisie (C3.1) — Scrum — Suite
+# Méthodologie choisie (C3.1) — Scrum — Suite (3/3)
 
 ### Artifacts
 
@@ -112,7 +112,7 @@ Insister sur l'adaptation Scrum en solo (daily async, PO côté client, SM = fac
 
 ---
 
-# Outil de planification (C3.1)
+# Outil de planification (C3.1) (1/3)
 
 ## GitHub Projects (Board/Sprints) + Milestones
 
@@ -130,7 +130,7 @@ graph LR
 
 ---
 
-# Outil de planification (C3.1) — Suite
+# Outil de planification (C3.1) — Suite (2/3)
 
 ## Board Kanban
 
@@ -144,7 +144,7 @@ graph LR
 
 ---
 
-# Outil de planification (C3.1) — Suite (2/2)
+# Outil de planification (C3.1) — Suite (3/3)
 
 ### Milestones
 
@@ -165,7 +165,7 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 
 ---
 
-# Architecture & stack (C3.1)
+# Architecture & stack (C3.1) (1/2)
 
 <div class="grid grid-cols-2 gap-8 text-sm">
 
@@ -190,7 +190,7 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 
 ---
 
-# Architecture & stack (C3.1) — Suite
+# Architecture & stack (C3.1) — Suite (2/2)
 
 <div class="grid grid-cols-3 gap-6 text-sm">
 
@@ -266,7 +266,7 @@ Pointer comment la séparation a simplifié la recette et les tests.
 
 ---
 
-# Planning détaillé (C3.1) — Sprints S1→S6
+# Planning détaillé (C3.1) — Sprints S1→S6 (1/2)
 
 <div class="text-sm card">
 
@@ -283,7 +283,7 @@ Pointer comment la séparation a simplifié la recette et les tests.
 
 ---
 
-# Planning détaillé (C3.1) — Pilotage & Dépendances
+# Planning détaillé (C3.1) — Pilotage & Dépendances (2/2)
 
 ## Phases & pilotage
 
@@ -322,7 +322,7 @@ Afficher les dates exactes adaptées à votre historique si différent; pointer 
 
 ---
 
-# User Stories — Exemple détaillé (C3.1)
+# User Stories — Exemple détaillé (C3.1) (1/2)
 
 ## User Story (US-VIS-02)
 
@@ -339,7 +339,7 @@ Afficher les dates exactes adaptées à votre historique si différent; pointer 
 
 ---
 
-# User Stories — Exemple détaillé (C3.1) — Suite
+# User Stories — Exemple détaillé (C3.1) — Suite (2/2)
 
 ### Critères d'acceptation (suite)
 - ✅ Message succès
@@ -482,7 +482,7 @@ graph LR
 
 ---
 
-# Pipeline CI/CD (C3.2.1) — Automatisation
+# Pipeline CI/CD (C3.2.1) — Automatisation (1/2)
 
 ## Étapes automatisées
 
@@ -496,7 +496,7 @@ graph LR
 
 ---
 
-# Pipeline CI/CD (C3.2.1) — Automatisation — Suite
+# Pipeline CI/CD (C3.2.1) — Automatisation — Suite (2/2)
 
 ### Étapes automatisées (suite)
 
@@ -558,7 +558,7 @@ Ajouter captures datées (burndown/vélocité Trello, tableau budget, cycle time
 
 ---
 
-# Suivi coûts & ressources (C3.2.1)
+# Suivi coûts & ressources (C3.2.1) (1/2)
 
 <div class="grid grid-cols-1 gap-6">
 
@@ -581,7 +581,7 @@ Ajouter captures datées (burndown/vélocité Trello, tableau budget, cycle time
 
 ---
 
-# Suivi coûts & ressources (C3.2.1) — Suite
+# Suivi coûts & ressources (C3.2.1) — Suite (2/2)
 
 ### Capacité & risques
 
@@ -626,7 +626,7 @@ Donner l'exemple de l'issue #1 (footer/email mobile) → corrigée.
 
 ---
 
-# Arbitrage (C3.2.2) — Cas réel documenté
+# Arbitrage (C3.2.2) — Cas réel documenté (1/3)
 
 ## Problème (S3, 11/04)
 
@@ -638,7 +638,7 @@ Impact potentiel sur la **qualité** (perte d'info), **délais** (Review S3), et
 
 ---
 
-# Arbitrage (C3.2.2) — Cas réel documenté — Suite
+# Arbitrage (C3.2.2) — Cas réel documenté — Suite (2/3)
 
 ### Option 1 ✅ — Réduire le périmètre
 
@@ -655,7 +655,7 @@ Impact potentiel sur la **qualité** (perte d'info), **délais** (Review S3), et
 
 ---
 
-# Arbitrage (C3.2.2) — Décision & Critères
+# Arbitrage (C3.2.2) — Décision & Critères (3/3)
 
 ## Option 3 — Renforcer l'équipe
 
@@ -725,7 +725,7 @@ Expliquer l'auto-organisation et la priorisation.
 
 ---
 
-# Styles managériaux utilisés (C3.3.1)
+# Styles managériaux utilisés (C3.3.1) (1/2)
 
 <div class="grid grid-cols-2 gap-8 text-sm">
 
@@ -763,7 +763,7 @@ Expliquer l'auto-organisation et la priorisation.
 
 ---
 
-# Styles managériaux utilisés (C3.3.1) — Suite
+# Styles managériaux utilisés (C3.3.1) — Suite (2/2)
 
 <div class="grid grid-cols-2 gap-8 text-sm">
 
@@ -855,7 +855,7 @@ Positionner la documentation comme alternative à Confluence.
 
 ---
 
-# Grille d'évaluation des compétences (C3.3.2)
+# Grille d'évaluation des compétences (C3.3.2) (1/2)
 
 <div class="card table-sm">
 
@@ -870,7 +870,7 @@ Positionner la documentation comme alternative à Confluence.
 
 ---
 
-# Grille d'évaluation des compétences (C3.3.2) — Suite
+# Grille d'évaluation des compétences (C3.3.2) — Suite (2/2)
 
 <div class="card table-sm">
 
@@ -972,7 +972,7 @@ Exemple de 4-6 lignes anonymisé réel.
 
 ---
 
-# Points de validation (C3.4.1)
+# Points de validation (C3.4.1) (1/2)
 
 ### Jalons & Reviews (dates réelles)
 
@@ -1002,7 +1002,7 @@ Exemple de 4-6 lignes anonymisé réel.
 
 ---
 
-# Points de validation (C3.4.1) — Suite
+# Points de validation (C3.4.1) — Suite (2/2)
 
 ### Processus validation
 
@@ -1089,7 +1089,7 @@ Montrer avant/après si possible pour les améliorations.
 
 <div class="text-center h-full flex flex-col justify-center">
 
-# Démo (C3.4.2)
+# Démo (C3.4.2) — Scénario Visiteur (1/3)
 
 ## Scénario Visiteur
 
@@ -1115,7 +1115,7 @@ Verrouiller réseau/onglets avant la démo; garder un jeu de fichiers test.
 
 <div class="text-center h-full flex flex-col justify-center">
 
-# Démo (C3.4.2)
+# Démo (C3.4.2) — Scénario Admin (2/3)
 
 ## Scénario Admin
 
@@ -1139,7 +1139,7 @@ Verbaliser bénéfices métier : tri plus rapide, traçabilité, archivage.
 
 ---
 
-# Démo (C3.4.2) — Critères de validation
+# Démo (C3.4.2) — Critères de validation (3/3)
 
 <div class="grid grid-cols-2 gap-8">
 
@@ -1259,37 +1259,3 @@ Rappeler scripts npm (test, coverage, lighthouse:prod, a11y:prod).
 
 
 ---
-
-# Matrices & modèles (Annexe)
-
-<div class="grid grid-cols-1 gap-6">
-
-<div class="card">
-
-### Modèles utilisés
-
-**RACI solo**
-| Activité | Adrien | Client | Mentor |
-|----------|--------|---------|---------|
-| Développement | R/A | C | I |
-| Validation | R/A | A | I |
-| Déploiement | R/A | I | I |
-
-**Registre risques**
-
-| Risque            | Impact | Probabilité | Score |
-| ----------------- | ------ | ----------- | ----- |
-| Quota dépassé     | 2      | 1           | 2     |
-| Régression auth   | 4      | 2           | 8     |
-| RGPD non-conforme | 3      | 1           | 3     |
-
-Seuil action : score ≥ 6
-
-</div>
-
-</div>
-
-<!--
-Indiquer où se trouvent les annexes (fin du deck / repo).
--->
-
