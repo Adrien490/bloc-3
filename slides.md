@@ -4,7 +4,7 @@ class: text-left
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## Diet-Clic - Présentation Bloc 3
+  ## Diététique et Interventions - Présentation Bloc 3
   Coordonner et piloter un projet de développement d'applications logicielles
 
   Projet : Application web pour Diététicienne Nutritionniste
@@ -20,23 +20,24 @@ fonts:
   mono: JetBrains Mono
 ---
 
-# Diet-Clic
+# Diététique et Interventions
 
 ## Présentation du projet & démo (Bloc 3)
 
 ### Coordonner et piloter un projet de développement d'applications logicielles
 
-<div class="mt-8 p-4 bg-blue-100 rounded-lg">
+<div class="mt-6 card brand">
   <strong>Mars → Juin 2025 (3 mois) — Rôle : Développeur unique</strong>
+  
 </div>
 
-<div class="mt-6">
-  <p class="text-lg text-gray-700">
+<div class="mt-4 card lead">
+  <p class="text-lg">
     <strong>Objectif :</strong> site vitrine + back-office de gestion des demandes de contact
   </p>
 </div>
 
-<div class="mt-8 text-sm text-gray-600">
+<div class="mt-4 card compact muted">
   <p><strong>Repo :</strong> https://github.com/Adrien490/dietetique-et-interventions</p>
   <p><strong>Prod :</strong> https://dietetique-et-interventions.manonchaillou.fr</p>
 </div>
@@ -166,9 +167,9 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 
 # Architecture & stack (C3.1)
 
-<div class="grid grid-cols-2 gap-8">
+<div class="grid grid-cols-2 gap-8 text-sm">
 
-<div>
+<div class="card">
 
 ### Front-end
 
@@ -183,7 +184,7 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 - **Server Actions** + API Routes
 - **Prisma ORM** - Base de données
 
-</div>
+ </div>
 
 </div>
 
@@ -193,7 +194,7 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 
 <div class="grid grid-cols-3 gap-6 text-sm">
 
-<div>
+<div class="card">
 
 ### Infrastructure
 
@@ -203,7 +204,7 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 
 </div>
 
-<div>
+<div class="card">
 
 ### Qualité & Observabilité
 
@@ -214,7 +215,7 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 
 </div>
 
-<div>
+<div class="card">
 
 ### Bénéfices
 
@@ -414,9 +415,9 @@ Expliquer comment un RACI reste pertinent même en équipe de 1 (C/I ≠ R/A).
 
 ## Instances Scrum
 
-<div class="grid grid-cols-2 gap-6">
+<div class="grid grid-cols-2 gap-6 text-sm">
 
-<div>
+<div class="card">
 
 ### Événements réguliers
 
@@ -433,7 +434,7 @@ Expliquer comment un RACI reste pertinent même en équipe de 1 (C/I ≠ R/A).
 
 </div>
 
-<div>
+<div class="card">
 
 ### Traçabilité
 
