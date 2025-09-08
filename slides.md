@@ -116,6 +116,8 @@ Insister sur l'adaptation Scrum en solo (daily async, PO côté client, SM = fac
 
 ## GitHub Projects (Board/Sprints) + Milestones
 
+<div class="mt-4"></div>
+
 ### Format opérationnel
 
 ```mermaid
