@@ -169,7 +169,7 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 
 # Architecture & stack (C3.1) (1/2)
 
-<div class="grid grid-cols-2 gap-8 text-sm">
+<div class="grid grid-cols-2 gap-8 text-sm equal-cols">
 
 <div class="card">
 
@@ -194,9 +194,9 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 
 # Architecture & stack (C3.1) — Suite (2/2)
 
-<div class="grid grid-cols-3 gap-6 text-sm">
+<div class="grid grid-cols-3 gap-6 text-sm equal-cols">
 
-<div class="card">
+<div class="card accent">
 
 ### Infrastructure
 
@@ -511,7 +511,7 @@ Souligner le gain de temps en démo/validation.
 
 # Indicateurs de pilotage (C3.2.1)
 
-<div class="grid grid-cols-2 gap-6 text-sm">
+<div class="grid grid-cols-2 gap-6 text-sm equal-cols">
 
 <div class="card compact">
 
@@ -720,7 +720,7 @@ Expliquer l'auto-organisation et la priorisation.
 
 # Styles managériaux utilisés (C3.3.1) (1/2)
 
-<div class="grid grid-cols-2 gap-8 text-sm">
+<div class="grid grid-cols-2 gap-8 text-sm equal-cols">
 
 <div class="card compact">
 
@@ -758,7 +758,7 @@ Expliquer l'auto-organisation et la priorisation.
 
 # Styles managériaux utilisés (C3.3.1) — Suite (2/2)
 
-<div class="grid grid-cols-2 gap-8 text-sm">
+<div class="grid grid-cols-2 gap-8 text-sm equal-cols">
 
 <div class="card compact">
 
@@ -797,7 +797,7 @@ Mini anecdote (choix formulaire vs chat, impact RGPD).
 
 # Outils de communication (C3.3.1)
 
-<div class="grid grid-cols-3 gap-6 text-sm">
+<div class="grid grid-cols-3 gap-6 text-sm equal-cols">
 
 <div class="card compact">
 
