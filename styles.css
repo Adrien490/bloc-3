@@ -1,5 +1,8 @@
 :root {
   --slidev-theme-primary: #2563eb; /* blue-600 */
+  --slidev-theme-secondary: #0ea5e9; /* cyan-500 */
+  --slidev-text: #0f172a; /* slate-900 */
+  --slidev-muted: #64748b; /* slate-500 */
 }
 
 .slidev-layout {
@@ -9,6 +12,15 @@
   padding: 0 24px;
   margin: 0 auto;
 }
+
+/* Text & links */
+body { color: var(--slidev-text); }
+a { color: var(--slidev-theme-primary); text-decoration: underline; text-underline-offset: 3px; }
+a:hover { color: #1d4ed8; }
+code { background: #f8fafc; border: 1px solid #e5e7eb; padding: .1rem .35rem; border-radius: 6px; }
+kbd { background: #111827; color: white; border-radius: 6px; padding: .1rem .4rem; font-size: .9em; }
+.muted { color: var(--slidev-muted); }
+.lead { font-size: 1.15rem; color: #111827; }
 
 h1, h2, h3 {
   letter-spacing: -0.01em;
@@ -34,6 +46,7 @@ table {
   overflow: hidden;
   border-radius: 10px;
   border: 1px solid #e5e7eb;
+  table-layout: fixed;
 }
 
 th {
@@ -43,6 +56,7 @@ th {
 
 th, td {
   padding: 0.55rem 0.75rem;
+  word-break: break-word;
 }
 
 tbody tr:nth-child(even) {
@@ -53,6 +67,8 @@ blockquote {
   border-left: 3px solid var(--slidev-theme-primary);
   padding-left: 0.75rem;
   color: #475569;
+  background: #f8fafc;
+  border-radius: 6px;
 }
 
 pre {
@@ -101,3 +117,34 @@ h1::after {
 
 /* Lists tighter spacing */
 li { margin-left: .5rem; }
+
+/* Mermaid & diagrams */
+.mermaid {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: .5rem;
+}
+
+/* Pills & badges */
+.pill {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #dbeafe;
+  background: #eff6ff;
+  color: #1e40af;
+  font-weight: 600;
+}
+
+/* Check list */
+.check-list { list-style: none; padding-left: 0; }
+.check-list li { position: relative; padding-left: 1.6rem; margin: .35rem 0; }
+.check-list li::before { content: "✓"; color: #16a34a; position: absolute; left: .2rem; top: 0; }
+
+/* Compact helpers */
+.compact { font-size: .95rem; }
+.table-sm table { font-size: .95rem; }
+
+/* Table wrapper for overflow */
+.table-wrapper { overflow-x: auto; }

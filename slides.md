@@ -49,19 +49,15 @@ Situer l'audience (jury pro) et l'objectif : gestion de projet + démo.
 
 # Sommaire aligné au référentiel
 
-### **C3.1 Planifier**
-
-### **C3.2.1 Piloter**
-
-### **C3.2.2 Arbitrer**
-
-### **C3.3.1 Manager l'équipe**
-
-### **C3.3.2 Évaluer & développer**
-
-### **C3.4.1 Suivi client & indicateurs**
-
-### **C3.4.2 Démonstration**
+<div class="columns-2">
+  <div class="card centered"><strong>C3.1 Planifier</strong></div>
+  <div class="card centered"><strong>C3.2.1 Piloter</strong></div>
+  <div class="card centered"><strong>C3.2.2 Arbitrer</strong></div>
+  <div class="card centered"><strong>C3.3.1 Manager l'équipe</strong></div>
+  <div class="card centered"><strong>C3.3.2 Évaluer & développer</strong></div>
+  <div class="card centered"><strong>C3.4.1 Suivi client & indicateurs</strong></div>
+  <div class="card centered"><strong>C3.4.2 Démonstration</strong></div>
+</div>
 
 <!--
 Préciser que chaque bloc du référentiel est couvert par au moins une slide dédiée.
@@ -137,9 +133,13 @@ graph LR
 
 ## Board Kanban
 
+<div class="card table-sm">
+
 | To do          | In progress | Code review | Done              |
 | -------------- | ----------- | ----------- | ----------------- |
 | Issues futures | WIP ≤ 2     | PR review   | Merged & deployed |
+
+</div>
 
 ---
 
@@ -191,7 +191,7 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 
 # Architecture & stack (C3.1) — Suite
 
-<div class="grid grid-cols-2 gap-8">
+<div class="grid grid-cols-3 gap-6 text-sm">
 
 <div>
 
@@ -200,6 +200,10 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 - **PostgreSQL** - Base de données
 - **Better Auth** - Authentification
 - **Vercel** - Hébergement & CI/CD
+
+</div>
+
+<div>
 
 ### Qualité & Observabilité
 
@@ -210,7 +214,7 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 
 </div>
 
-</div>
+<div>
 
 ### Bénéfices
 
@@ -218,6 +222,10 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 - **Sécurité** : TypeScript + validation Zod
 - **Accessibilité** : WCAG 2.1 AA
 - **Observabilité** : Erreurs & métriques temps réel
+
+</div>
+
+</div>
 
 <!--
 Lier les choix techniques aux risques/perf/accessibilité.
@@ -259,7 +267,7 @@ Pointer comment la séparation a simplifié la recette et les tests.
 
 # Planning détaillé (C3.1) — Sprints S1→S6
 
-<div class="text-sm">
+<div class="text-sm card">
 
 | Sprint | Dates       | Objectifs                                              |
 | ------ | ----------- | ------------------------------------------------------ |
@@ -511,7 +519,7 @@ Souligner le gain de temps en démo/validation.
 
 <div class="grid grid-cols-2 gap-6 text-sm">
 
-<div>
+<div class="card compact">
 
 ### Avancement & Qualité
 
@@ -530,7 +538,7 @@ Souligner le gain de temps en démo/validation.
 
 </div>
 
-<div>
+<div class="card">
 
 ### Délais & Budget
 
@@ -553,7 +561,7 @@ Ajouter captures datées (burndown/vélocité Trello, tableau budget, cycle time
 
 <div class="grid grid-cols-1 gap-6">
 
-<div>
+<div class="card">
 
 ### Coûts services (paliers gratuits)
 
@@ -590,7 +598,7 @@ Insérer mini-tableau mensuel avec chiffres réels.
 
 <div class="grid grid-cols-1 gap-6">
 
-<div>
+<div class="card">
 
 ### Risques & actions
 
@@ -671,7 +679,7 @@ Délai • Couverture besoin (≥95%) • Risque technique • Dette • Impact 
 
 <div class="grid grid-cols-2 gap-8">
 
-<div>
+<div class="card">
 
 ### Équipe
 
@@ -689,7 +697,7 @@ Délai • Couverture besoin (≥95%) • Risque technique • Dette • Impact 
 
 </div>
 
-<div>
+<div class="card">
 
 ### Auto-organisation
 
@@ -718,28 +726,32 @@ Expliquer l'auto-organisation et la priorisation.
 
 # Styles managériaux utilisés (C3.3.1)
 
-<div class="grid grid-cols-2 gap-8">
+<div class="grid grid-cols-2 gap-8 text-sm">
 
-<div>
+<div class="card compact">
 
 ### Styles par situation
 
-**🎯 Directif**
+<strong>🎯 Directif</strong>
 
 - Incidents prod, sécurité
 - Décision immédiate requise
 
-**💡 Persuasif**
+<strong>💡 Persuasif</strong>
 
 - Pédagogie client (bénéfices a11y/tests)
 - Justification choix techniques
 
-**🤝 Participatif**
+</div>
+
+<div class="card compact">
+
+<strong>🤝 Participatif</strong>
 
 - Co-construction contenus vitrine en Review
 - Validation UX/fonctionnalités
 
-**🎯 Délégatif**
+<strong>🎯 Délégatif</strong>
 
 - N/A (équipe solo)
 - Mention si sous-traitance future
@@ -752,9 +764,9 @@ Expliquer l'auto-organisation et la priorisation.
 
 # Styles managériaux utilisés (C3.3.1) — Suite
 
-<div class="grid grid-cols-2 gap-8">
+<div class="grid grid-cols-2 gap-8 text-sm">
 
-<div>
+<div class="card compact">
 
 ### Analyse critique : cas "prioriser RGPD vs Dashboard"
 
@@ -768,6 +780,10 @@ Expliquer l'auto-organisation et la priorisation.
 
 - Anticipation des dépendances
 - Planification plus fine des contraintes légales
+
+</div>
+
+<div class="card compact">
 
 ### Apprentissages
 
@@ -787,9 +803,9 @@ Mini anecdote (choix formulaire vs chat, impact RGPD).
 
 # Outils de communication (C3.3.1)
 
-<div class="grid grid-cols-2 gap-8">
+<div class="grid grid-cols-3 gap-6 text-sm">
 
-<div>
+<div class="card compact">
 
 ### Présentiel/Visio
 
@@ -800,6 +816,10 @@ Mini anecdote (choix formulaire vs chat, impact RGPD).
 - Décisions documentées
 - Prochaines étapes claires
 
+</div>
+
+<div class="card compact">
+
 ### Asynchrone
 
 - **E-mail** : CR formels, jalons
@@ -808,7 +828,7 @@ Mini anecdote (choix formulaire vs chat, impact RGPD).
 
 </div>
 
-<div>
+<div class="card compact">
 
 ### Documentation
 
@@ -822,13 +842,7 @@ Mini anecdote (choix formulaire vs chat, impact RGPD).
 - **Clarté** : compréhension mutuelle
 - **Engagement** : validation commanditaire
 
-### Preuve
 
-Extrait CR anonymisé :
-
-- Participants, ordre du jour
-- Décisions prises
-- Actions suivantes
 
 </div>
 
@@ -842,24 +856,32 @@ Positionner la documentation comme alternative à Confluence.
 
 # Grille d'évaluation des compétences (C3.3.2)
 
+<div class="card table-sm">
+
 | Compétence                    | Niveau actuel | Cible | Preuves / Commentaires                                         |
 | ----------------------------- | ------------- | ----- | -------------------------------------------------------------- |
 | **Next.js / React**           | 3             | 4     | Vitrine + Dashboard en prod ; routing app dir ; Server Actions |
 | **TypeScript strict**         | 3             | 4     | `tsc --noEmit` clean ; types Domain ; Zod schemas alignés      |
 | **Prisma / SQL**              | 2             | 3     | Migrations `prisma migrate` ; indexations ; seed contrôlé      |
 | **Tests (Jest/RTL)**          | 2             | 3     | 1557/1557 tests ; 56.64% coverage → 70% visé                   |
-| **A11y (WCAG)**               | 3             | 4     | Pa11y=0 ; Lighthouse A11y=100 ; focus & nav clavier            |
-| **CI/CD Vercel**              | 3             | 4     | Preview par PR ; `VERCEL_GIT_COMMIT_SHA` exposé                |
-| **RGPD & sécurité**           | 2             | 3     | Registre, DPA (Vercel/Sentry/Resend/UploadThing), headers      |
-| **Gestion de projet (Scrum)** | 3             | 4     | Sprints S1→S6 ; Reviews ; burndown ; vélocité                  |
 
-### Échelle de notation
+</div>
 
-**1** : Débutant • **2** : Apprentissage • **3** : Autonome • **4** : Expert
+---
 
-<!--
-Consolidation des compétences techniques et managériales.
--->
+# Grille d'évaluation des compétences (C3.3.2) — Suite
+
+<div class="card table-sm">
+
+| Compétence                    | Niveau actuel | Cible | Preuves / Commentaires                                   |
+| ----------------------------- | ------------- | ----- | -------------------------------------------------------- |
+| **A11y (WCAG)**               | 3             | 4     | Pa11y=0 ; Lighthouse A11y=100 ; focus & nav clavier      |
+| **CI/CD Vercel**              | 3             | 4     | Preview par PR ; `VERCEL_GIT_COMMIT_SHA` exposé          |
+| **RGPD & sécurité**           | 2             | 3     | Registre, DPA (Vercel/Sentry/Resend/UploadThing), headers |
+| **Gestion de projet (Scrum)** | 3             | 4     | Sprints S1→S6 ; Reviews ; burndown ; vélocité             |
+
+</div>
+
 
 ---
 
@@ -1070,21 +1092,16 @@ Montrer avant/après si possible pour les améliorations.
 
 ## Scénario Visiteur
 
-### URL prod : https://dietetique-et-interventions.manonchaillou.fr
-
-<div class="mt-8 p-6 bg-blue-50 rounded-lg">
-
-### Parcours utilisateur
-
-**Accueil** → **Prestations** → **Contact** → **Validation & upload**  
-(≤3 fichiers, 4MB, jpg/png/pdf) → **Envoi** → **Toast succès** → **E-mail reçu** (Resend)
-
+<div class="mt-6 text-sm muted">
+  <p>URL: https://dietetique-et-interventions.manonchaillou.fr</p>
 </div>
 
-<div class="mt-8 text-sm text-gray-600">
-  <p>🎯 Démonstration des fonctionnalités critiques</p>
-  <p>📧 Validation e-mail en temps réel</p>
-  <p>📁 Test upload avec gestion d'erreurs</p>
+### Parcours
+
+Accueil → Prestations → Contact → Upload → Envoi → Confirmation
+
+<div class="mt-4 text-sm text-gray-600">
+  <p>🎯 Validation • Upload ≤3×4MB • E-mail envoyé</p>
 </div>
 
 </div>
@@ -1101,27 +1118,16 @@ Verrouiller réseau/onglets avant la démo; garder un jeu de fichiers test.
 
 ## Scénario Admin
 
-<div class="mt-8 p-6 bg-green-50 rounded-lg">
-
-### Compte d'évaluation
-
-**Login** : jury@ynov.com  
-**Password** : d85pm832
-
+<div class="mt-6 text-sm muted">
+  <p>Compte test: jury@ynov.com • mdp: d85pm832</p>
 </div>
 
-<div class="mt-8">
+### Parcours
 
-### Parcours administrateur
+Dashboard → Contact-requests → Détail → Statut → Archivage
 
-**Dashboard** → **Stats** → **Contact-requests** → **Recherche, filtres, tri** → **Détail** → **Changement de statut** → **Archivage**
-
-</div>
-
-<div class="mt-8 text-sm text-gray-600">
-  <p>📊 Bénéfices métier : tri plus rapide, traçabilité, archivage</p>
-  <p>🔍 Filtres par statut, date, type de demande</p>
-  <p>📋 Workflow de traitement optimisé</p>
+<div class="mt-4 text-sm text-gray-600">
+  <p>📊 Tri rapide • Traçabilité • Workflow optimisé</p>
 </div>
 
 </div>
@@ -1169,17 +1175,6 @@ Verbaliser bénéfices métier : tri plus rapide, traçabilité, archivage.
 
 </div>
 
-### Check-list démo
-
-- [ ] Connexion stable
-- [ ] Fichiers test préparés
-- [ ] Comptes créés
-- [ ] Scénarios répétés
-- [ ] Rollback prêt
-
-<!--
-Conclure par « version utilisable » pour validation commanditaire.
--->
 
 ---
 
@@ -1244,7 +1239,7 @@ Rappeler scripts npm (test, coverage, lighthouse:prod, a11y:prod).
 
 <div class="grid grid-cols-1 gap-6">
 
-<div>
+<div class="card">
 
 ### Pipeline & traçabilité
 
@@ -1268,7 +1263,7 @@ Rappeler scripts npm (test, coverage, lighthouse:prod, a11y:prod).
 
 <div class="grid grid-cols-1 gap-6">
 
-<div>
+<div class="card">
 
 ### Modèles utilisés
 
