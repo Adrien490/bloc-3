@@ -16,8 +16,8 @@ css:
 wakeLock: "build"
 transition: slide-left
 fonts:
-  sans: Inter
-  mono: JetBrains Mono
+  sans: Manrope
+  mono: IBM Plex Mono
 ---
 
 # Diététique et Interventions
@@ -254,15 +254,6 @@ src/
 └── prisma/           # Base de données
 ```
 
-### Avantages
-
-- **Séparation claire** : responsabilités isolées
-- **Testabilité** : tests unitaires par domaine
-- **Scalabilité** : ajout de nouveaux domaines facilité
-
-<!--
-Pointer comment la séparation a simplifié la recette et les tests.
--->
 
 ---
 
@@ -870,8 +861,6 @@ Positionner la documentation comme alternative à Confluence.
 
 ---
 
-# Grille d'évaluation des compétences (C3.3.2) — Suite (2/2)
-
 <div class="card table-sm">
 
 | Compétence                    | Niveau actuel | Cible | Preuves / Commentaires                                   |
@@ -1018,10 +1007,9 @@ graph LR
 
 ### Critères GO/NO-GO
 
-- Fonctionnalités conformes aux US
-- Tests passants
-- Lighthouse ≥ seuils
-- Validation commanditaire
+ - Tests passants
+ - Lighthouse ≥ seuils
+ - Validation commanditaire
 
 <!--
 Chaque jalon = démo live sur Vercel Preview puis prod.
@@ -1256,4 +1244,3 @@ Rappeler scripts npm (test, coverage, lighthouse:prod, a11y:prod).
 </div>
 
 </div>
-
