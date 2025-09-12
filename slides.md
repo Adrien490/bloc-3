@@ -97,14 +97,14 @@ Préciser que chaque bloc du référentiel est couvert par au moins une slide d�
 
 ### Artifacts
 
-- **Product Backlog** : Issues GitHub
+- **Product Backlog** : Trello
 - **Sprint Backlog** : Board
 - **Definition of Done** : lint + type-check + tests + Preview OK + CR client
 - **Increment** : déploiement Vercel
 
 ### Bénéfices
 
-✅ Prévisibilité (vélocité) • Time-to-value court • Transparence • Amélioration continue
+✅ Transparence • Amélioration continue
 
 <!--
 Insister sur l'adaptation Scrum en solo (daily async, PO côté client, SM = facilitateur) et la valeur de la vélocité pour piloter.
@@ -114,7 +114,7 @@ Insister sur l'adaptation Scrum en solo (daily async, PO côté client, SM = fac
 
 # Outil de planification (C3.1) (1/3)
 
-## GitHub Projects (Board/Sprints) + Milestones
+## Trello (Board/Sprints) + Milestones
 
 <div class="mt-4"></div>
 
@@ -122,27 +122,14 @@ Insister sur l'adaptation Scrum en solo (daily async, PO côté client, SM = fac
 
 ```mermaid
 graph LR
-    A[Backlog<br/>user stories] --> B[Sprint Backlog] --> C[Tâches]
+    A[Backlog] --> B[Sprint Backlog] --> C[Tâches]
 ```
 
-### Visualisation
-
 - **Release Plan** par Sprint (Mars → Juin 2025)
-- **Rétroplanning** haut niveau avec dépendances et chemin critique
 
 ---
 
-# Outil de planification (C3.1) — Suite (2/3)
-
-## Board Kanban
-
-<div class="card table-sm">
-
-| To do          | In progress | Code review | Done              |
-| -------------- | ----------- | ----------- | ----------------- |
-| Issues futures | WIP ≤ 2     | PR review   | Merged & deployed |
-
-</div>
+![Board Trello](./board.png)
 
 ---
 
@@ -256,7 +243,6 @@ src/
 └── prisma/           # Base de données
 ```
 
-
 ---
 
 # Planning détaillé (C3.1) — Sprints S1→S6 (1/2)
@@ -335,6 +321,7 @@ Afficher les dates exactes adaptées à votre historique si différent; pointer 
 # User Stories — Exemple détaillé (C3.1) — Suite (2/2)
 
 ### Critères d'acceptation (suite)
+
 - ✅ Message succès
 - ✅ E-mail Resend reçu
 - ✅ Entrée visible en dashboard statut = "Nouveau"
@@ -363,14 +350,12 @@ Montrer 1 user story + critères d'acceptation + liens.
 
 - **Adrien** = R/A (tous lots)
 - **Consulted** = Commanditaire
-- **Informed** = hébergeur/mentor si applicable
 
 ### Répartition des responsabilités
 
 - Conception/UX (R/A)
 - Front/Back/DB (R/A)
 - Tests/Qualité (R/A)
-- DevOps/CI/CD (R/A)
 - Relation client (R/A)
 
 </div>
@@ -388,11 +373,6 @@ Montrer 1 user story + critères d'acceptation + liens.
 ### Budget par poste
 
 _(Détail slide 13)_
-
-### Handicap
-
-- **Actuellement** : N/A
-- **Protocole prévu** si onboarding d'un tiers
 
 </div>
 
@@ -414,7 +394,7 @@ Expliquer comment un RACI reste pertinent même en équipe de 1 (C/I ≠ R/A).
 
 ### Événements réguliers
 
-- **Daily** (async, board) : 5 min
+- **Daily** (board) : 5 min
 - **Sprint Planning** (début) : 1h
 - **Sprint Review** (hebdo présentiel) : démo Preview/Prod
 - **Sprint Retrospective** (fin) : 20-30 min
@@ -422,8 +402,6 @@ Expliquer comment un RACI reste pertinent même en équipe de 1 (C/I ≠ R/A).
 ### Outil de suivi : Trello
 
 - **Colonnes** : To do / In progress / Code review / Done
-- **WIP** = 2 sur "In progress"
-- **Métriques** : burndown et vélocité via export/Power-Ups
 
 </div>
 
@@ -433,7 +411,7 @@ Expliquer comment un RACI reste pertinent même en équipe de 1 (C/I ≠ R/A).
 
 ```mermaid
 graph LR
-    A[Carte Trello] --> B[Issue GitHub]
+    A[Carte Trello] --> B[Branch GitHub]
     B --> C[PR GitHub]
     C --> D[Preview Vercel]
     D --> E[Prod]
@@ -441,9 +419,8 @@ graph LR
 
 ### Cohérence méthodologique
 
-- Trello supporte Scrum (sprints, burndown, vélocité)
-- Daily asynchrone via board
-- Transparence totale avec le commanditaire
+- Daily adapté via board
+- Transparence avec la diététicienne
 
 </div>
 
@@ -494,7 +471,7 @@ graph LR
 ### Étapes automatisées (suite)
 
 3. **Merge main** → Prod + `prisma migrate deploy`
- 
+
 4. **Rollback rapide** via Vercel
 
 ### Bénéfices
@@ -517,8 +494,6 @@ Souligner le gain de temps en démo/validation.
 
 ### Avancement & Qualité
 
-- **Vélocité** : X pts/sprint (médiane S2–S6)
-- **Burndown** : objectif vs restant
 - **Tests** : 1557/1557 ✅
 - **Coverage** : 56.64% → 70%
 
@@ -528,7 +503,7 @@ Souligner le gain de temps en démo/validation.
 - **Accessibilité** : 100
 - **SEO** : 100
 - **Best Practices** : 100
-- **Erreurs Sentry** : < 1% (30j glissants)
+- **Erreurs Sentry** : 0
 
 </div>
 
@@ -538,8 +513,6 @@ Souligner le gain de temps en démo/validation.
 
 - **Cycle time** : issue → prod (Y jours)
 - **Coûts** : 0€ (paliers gratuits)
-- **WIP** : 1–2 max
-- **Risques** : matrice impact × probabilité
 
 </div>
 
@@ -724,22 +697,6 @@ Expliquer l'auto-organisation et la priorisation.
 
 <div class="card compact">
 
-### Styles par situation
-
-<strong>🎯 Directif</strong>
-
-- Incidents prod, sécurité
-- Décision immédiate requise
-
-<strong>💡 Persuasif</strong>
-
-- Pédagogie client (bénéfices a11y/tests)
-- Justification choix techniques
-
-</div>
-
-<div class="card compact">
-
 <strong>🤝 Participatif</strong>
 
 - Co-construction contenus vitrine en Review
@@ -836,8 +793,6 @@ Mini anecdote (choix formulaire vs chat, impact RGPD).
 - **Clarté** : compréhension mutuelle
 - **Engagement** : validation commanditaire
 
-
-
 </div>
 
 </div>
@@ -852,12 +807,12 @@ Positionner la documentation comme alternative à Confluence.
 
 <div class="card table-sm">
 
-| Compétence                    | Niveau actuel | Cible | Preuves / Commentaires                                         |
-| ----------------------------- | ------------- | ----- | -------------------------------------------------------------- |
-| **Next.js / React**           | 3             | 4     | Vitrine + Dashboard en prod ; routing app dir ; Server Actions |
-| **TypeScript strict**         | 3             | 4     | `tsc --noEmit` clean ; types Domain ; Zod schemas alignés      |
-| **Prisma / SQL**              | 2             | 3     | Migrations `prisma migrate` ; indexations ; seed contrôlé      |
-| **Tests (Jest/RTL)**          | 2             | 3     | 1557/1557 tests ; 56.64% coverage → 70% visé                   |
+| Compétence            | Niveau actuel | Cible | Preuves / Commentaires                                         |
+| --------------------- | ------------- | ----- | -------------------------------------------------------------- |
+| **Next.js / React**   | 3             | 4     | Vitrine + Dashboard en prod ; routing app dir ; Server Actions |
+| **TypeScript strict** | 3             | 4     | `tsc --noEmit` clean ; types Domain ; Zod schemas alignés      |
+| **Prisma / SQL**      | 2             | 3     | Migrations `prisma migrate` ; indexations ; seed contrôlé      |
+| **Tests (Jest/RTL)**  | 2             | 3     | 1557/1557 tests ; 56.64% coverage → 70% visé                   |
 
 </div>
 
@@ -865,15 +820,14 @@ Positionner la documentation comme alternative à Confluence.
 
 <div class="card table-sm">
 
-| Compétence                    | Niveau actuel | Cible | Preuves / Commentaires                                   |
-| ----------------------------- | ------------- | ----- | -------------------------------------------------------- |
-| **A11y (WCAG)**               | 3             | 4     | Pa11y=0 ; Lighthouse A11y=100 ; focus & nav clavier      |
-| **CI/CD Vercel**              | 3             | 4     | Preview par PR ; `VERCEL_GIT_COMMIT_SHA` exposé          |
+| Compétence                    | Niveau actuel | Cible | Preuves / Commentaires                                    |
+| ----------------------------- | ------------- | ----- | --------------------------------------------------------- |
+| **A11y (WCAG)**               | 3             | 4     | Pa11y=0 ; Lighthouse A11y=100 ; focus & nav clavier       |
+| **CI/CD Vercel**              | 3             | 4     | Preview par PR ; `VERCEL_GIT_COMMIT_SHA` exposé           |
 | **RGPD & sécurité**           | 2             | 3     | Registre, DPA (Vercel/Sentry/Resend/UploadThing), headers |
 | **Gestion de projet (Scrum)** | 3             | 4     | Sprints S1→S6 ; Reviews ; burndown ; vélocité             |
 
 </div>
-
 
 ---
 
@@ -1009,9 +963,9 @@ graph LR
 
 ### Critères GO/NO-GO
 
- - Tests passants
- - Lighthouse ≥ seuils
- - Validation commanditaire
+- Tests passants
+- Lighthouse ≥ seuils
+- Validation commanditaire
 
 <!--
 Chaque jalon = démo live sur Vercel Preview puis prod.
@@ -1165,7 +1119,6 @@ Verbaliser bénéfices métier : tri plus rapide, traçabilité, archivage.
 </div>
 
 </div>
-
 
 ---
 
