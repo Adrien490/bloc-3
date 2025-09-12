@@ -59,7 +59,6 @@ Situer l'audience (jury pro) et l'objectif : gestion de projet + démo.
   <div class="card centered"><strong>C3.4.1 Suivi client & indicateurs</strong></div>
   <div class="card centered"><strong>C3.4.2 Démonstration</strong></div>
 </div>
-
 <!--
 Préciser que chaque bloc du référentiel est couvert par au moins une slide dédiée.
 -->
@@ -102,8 +101,6 @@ Préciser que chaque bloc du référentiel est couvert par au moins une slide d�
 - **Definition of Done** : lint + type-check + tests + Preview OK + CR client
 - **Increment** : déploiement Vercel
 
-### Bénéfices
-
 ✅ Transparence • Amélioration continue
 
 <!--
@@ -129,6 +126,8 @@ graph LR
 
 ---
 
+# Outil de planification (C3.1) — Suite (2/3)
+
 ![Board Trello](./board.png)
 
 ---
@@ -143,8 +142,6 @@ graph LR
 - **S4** (15/04→26/04) : Auth
 - **S5** (29/04→10/05) : Dashboard
 - **S6** (13/05→24/05) : Qualité & Prod
-
-### Bénéfices
 
 Vue sprint + réordonnancement simple, alignement avec Reviews/CR
 
@@ -205,8 +202,6 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 </div>
 
 <div class="card">
-
-### Bénéfices
 
 - **Performance** : SSR/SSG optimisé
 - **Sécurité** : TypeScript + validation Zod
@@ -351,12 +346,7 @@ Montrer 1 user story + critères d'acceptation + liens.
 - **Adrien** = R/A (tous lots)
 - **Consulted** = Commanditaire
 
-### Répartition des responsabilités
-
-- Conception/UX (R/A)
-- Front/Back/DB (R/A)
-- Tests/Qualité (R/A)
-- Relation client (R/A)
+<!-- Répartition des responsabilités détaillée sur la slide "Affectation des missions" -->
 
 </div>
 
@@ -370,9 +360,7 @@ Montrer 1 user story + critères d'acceptation + liens.
 - **Resend** - E-mails
 - **UploadThing** - Upload fichiers
 
-### Budget par poste
-
-_(Détail slide 13)_
+<!-- Budget détaillé couvert par "Suivi coûts & ressources" -->
 
 </div>
 
@@ -391,13 +379,6 @@ Expliquer comment un RACI reste pertinent même en équipe de 1 (C/I ≠ R/A).
 <div class="grid grid-cols-2 gap-6 text-sm">
 
 <div class="card">
-
-### Événements réguliers
-
-- **Daily** (board) : 5 min
-- **Sprint Planning** (début) : 1h
-- **Sprint Review** (hebdo présentiel) : démo Preview/Prod
-- **Sprint Retrospective** (fin) : 20-30 min
 
 ### Outil de suivi : Trello
 
@@ -432,56 +413,10 @@ Montrer 1 carte « Done » liée à une PR et au déploiement Preview.
 
 ---
 
-# Pipeline CI/CD (C3.2.1)
-
-## Workflow Git
-
-<div class="mt-8">
-
-```mermaid
-graph LR
-    A[feature/* / fix/*] --> B[Build Vercel]
-    B --> C{Tests OK?}
-    C -->|✅| D[Preview]
-    C -->|❌| E[Échec]
-    D --> F[Merge main]
-    F --> G[Prod + migrate]
-```
-
-</div>
-
----
-
-# Pipeline CI/CD (C3.2.1) — Automatisation (1/2)
-
-## Étapes automatisées
-
-1. **Build Vercel**
-   - Lint (ESLint)
-   - Type-check (TypeScript)
-   - Tests (Jest)
-   - Build
-
-2. **Preview** → recette + Sentry
-
----
-
-# Pipeline CI/CD (C3.2.1) — Automatisation — Suite (2/2)
-
-### Étapes automatisées (suite)
-
-3. **Merge main** → Prod + `prisma migrate deploy`
-
-4. **Rollback rapide** via Vercel
-
-### Bénéfices
-
-- Validation automatique
-- Feedback rapide
-- Déploiement sécurisé
+<!-- removed orphan pipeline block -->
 
 <!--
-Souligner le gain de temps en démo/validation.
+
 -->
 
 ---
@@ -1121,81 +1056,3 @@ Verbaliser bénéfices métier : tri plus rapide, traçabilité, archivage.
 </div>
 
 ---
-
-# Sécurité & RGPD (Annexe)
-
-<div class="grid grid-cols-1 gap-6">
-
-<div>
-
-### Sécurité & authentification
-
-- **OWASP** : RBAC, validation Zod, headers CSP/HSTS
-- **Better Auth** : sessions sécurisées, rôles Admin/Nutritionniste
-- **Monitoring** : Sentry logs
-
-### RGPD
-
-- **Registre** : traitements documentés
-- **DPA** : Vercel, Sentry, Resend, UploadThing
-- **Flux** : Collecte → Stockage → Usage → Conservation → Suppression
-- **Droits** : accès, rectification, effacement, portabilité
-
-</div>
-
-</div>
-
-<!--
-Positionner ce qui est déjà fait vs à faire.
--->
-
----
-
-# Qualité & tests (Annexe)
-
-<div class="grid grid-cols-1 gap-6">
-
-<div>
-
-### Tests & métriques qualité
-
-- **Jest/RTL** : 1557/1557 passants ✅
-- **Coverage** : 56.64% → objectif 70%
-- **Lighthouse prod** : Perf 92, A11y 100, SEO 100, BP 100
-- **Pa11y** : 0 issue ✅
-
-### Scripts & surveillance
-
-- `npm run test:coverage` • `npm run lighthouse:prod` • `npm run a11y:prod`
-- **Surveillance** : Sentry (erreurs), Vercel Analytics (perf)
-
-</div>
-
-</div>
-
-<!--
-Rappeler scripts npm (test, coverage, lighthouse:prod, a11y:prod).
--->
-
----
-
-# CI/CD & traçabilité (Annexe)
-
-<div class="grid grid-cols-1 gap-6">
-
-<div class="card">
-
-### Pipeline & traçabilité
-
-- **Pipeline** : Feature branch → Build/tests → Preview → Prod
-- **Migrations** : `prisma migrate deploy`
-- **Variables** : `VERCEL_GIT_COMMIT_SHA`, `VERCEL_ENV`
-- **Rollback** : redeploy build précédent
-
-### Traçabilité complète
-
-**Issue #42** → **PR #87** → **SHA a1b2c3** → **Preview** → **Review** → **Prod**
-
-</div>
-
-</div>
