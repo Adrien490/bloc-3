@@ -27,7 +27,7 @@ fonts:
 ### Coordonner et piloter un projet de développement d'applications logicielles
 
 <div class="mt-6 card brand">
-  <strong>Mars → Juin 2025 (3 mois) — Rôle : Développeur unique</strong>
+  <strong>Mars → Juin 2025 (3 mois) — Développeur unique</strong>
   
 </div>
 
@@ -43,7 +43,12 @@ fonts:
 </div>
 
 <!--
-Situer l'audience (jury pro) et l'objectif : gestion de projet + démo.
+NOTES ORAL (2min) :
+- Bonjour. Je suis Adrien Poirier, projet Bloc 3 "Diététique et Interventions"
+- Objectif : site vitrine + back-office pour diététicienne nutritionniste
+- Site en production : dietetique-et-interventions.manonchaillou.fr
+- Code source sur GitHub
+- Présentation couvre tous aspects référentiel : planification → démonstration
 -->
 
 ---
@@ -60,7 +65,9 @@ Situer l'audience (jury pro) et l'objectif : gestion de projet + démo.
   <div class="card centered"><strong>C3.4.2 Démonstration</strong></div>
 </div>
 <!--
-Préciser que chaque bloc du référentiel est couvert par au moins une slide dédiée.
+NOTES ORAL - Sommaire :
+- Comme vous pouvez le voir, j'ai structuré ma présentation pour couvrir l'ensemble des compétences du référentiel C3.1 à C3.4.2
+- Chaque bloc sera traité avec des preuves concrètes et des exemples
 -->
 
 ---
@@ -77,6 +84,14 @@ Préciser que chaque bloc du référentiel est couvert par au moins une slide d�
 - **Scrum Master** = Adrien (facilitateur)
 - **Dev Team** = Adrien
 
+<!--
+NOTES ORAL - Méthodologie :
+- Pour ce projet, j'ai choisi d'adapter la méthodologie Scrum à un contexte de développeur unique
+- Pourquoi Scrum ? Parce que même en solo, cette approche apporte de la structure, de la transparence et permet une amélioration continue
+- J'ai adapté les rôles : la commanditaire joue le rôle de Product Owner, j'assume celui de Scrum Master comme facilitateur, et bien sûr je suis l'équipe de développement
+- Les sprints durent 2 semaines, ce qui permet un rythme soutenu tout en gardant de la flexibilité
+-->
+
 ---
 
 # Méthodologie choisie (C3.1) — Scrum — Événements (2/3)
@@ -89,6 +104,15 @@ Préciser que chaque bloc du référentiel est couvert par au moins une slide d�
 | **Daily**                | Asynchrone via board | 5 min     | Blocages, priorités du jour     |
 | **Sprint Review**        | Hebdo présentiel     | -         | Démo increment Preview/Prod     |
 | **Sprint Retrospective** | Fin de sprint        | 20-30 min | Amélioration processus          |
+
+<!--
+NOTES ORAL - Événements Scrum :
+- Les événements Scrum ont été adaptés
+- Sprint Planning dure 1 heure en début de sprint
+- Daily asynchrone via board Trello pour éviter surcharge
+- Sprint Reviews hebdomadaires en présentiel pour maintenir alignement client
+- Rétrospectives fin sprint durent 20-30 minutes pour amélioration continue
+-->
 
 ---
 
@@ -104,7 +128,11 @@ Préciser que chaque bloc du référentiel est couvert par au moins une slide d�
 ✅ Transparence • Amélioration continue
 
 <!--
-Insister sur l'adaptation Scrum en solo (daily async, PO côté client, SM = facilitateur) et la valeur de la vélocité pour piloter.
+NOTES ORAL - Artifacts Scrum :
+- Les artifacts incluent le Product Backlog géré dans Trello
+- Le Sprint Backlog visible sur le board
+- Une Definition of Done claire avec lint, type-check, tests, preview OK et validation client
+- L'increment déployé automatiquement sur Vercel
 -->
 
 ---
@@ -124,11 +152,25 @@ graph LR
 
 - **Release Plan** par Sprint (Mars → Juin 2025)
 
+<!--
+NOTES ORAL - Format Trello :
+- Board/Sprints avec milestones
+- Release Plan par Sprint mars-juin
+- Vue backlog alimentant planification
+-->
+
 ---
 
 # Outil de planification (C3.1) — Suite (2/3)
 
 ![Board Trello](./board.png)
+
+<!--
+NOTES ORAL - Board Trello :
+- Voici le board que j'utilise quotidiennement
+- Structure claire avec colonnes workflow
+- Traçabilité complète des tâches
+-->
 
 ---
 
@@ -146,7 +188,15 @@ graph LR
 Vue sprint + réordonnancement simple, alignement avec Reviews/CR
 
 <!--
-Montrer la vue Board et Milestones; préciser comment le backlog alimente la planification.
+NOTES ORAL - Milestones :
+- 6 sprints de 2 semaines chacun
+- S1 cadrage fonctionnel et design
+- S2 vitrine et SEO
+- S3 formulaire contact avec upload
+- S4 authentification et rôles
+- S5 dashboard administrateur
+- S6 qualité, RGPD et mise en production
+- Planification respecte les dépendances
 -->
 
 ---
@@ -173,6 +223,16 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
  </div>
 
 </div>
+
+<!--
+NOTES ORAL - Architecture & Stack (1/2) :
+- Côté architecture technique, j'ai opté pour une stack moderne et robuste
+- Next.js 15 avec React 19 pour le frontend
+- TypeScript strict pour la sécurité du code
+- Tailwind CSS pour le styling, Radix UI avec shadcn/ui pour les composants
+- Le backend utilise Server Actions Next.js combinées aux API Routes
+- Avec Prisma ORM pour la base de données PostgreSQL
+-->
 
 ---
 
@@ -213,7 +273,13 @@ Montrer la vue Board et Milestones; préciser comment le backlog alimente la pla
 </div>
 
 <!--
-Lier les choix techniques aux risques/perf/accessibilité.
+NOTES ORAL - Architecture & Stack (2/2) :
+- L'infrastructure repose sur Vercel pour l'hébergement et le CI/CD
+- Better Auth pour l'authentification, PostgreSQL base de données
+- Pour la qualité : Jest avec React Testing Library, Lighthouse pour la performance
+- Pa11y pour l'accessibilité, et Sentry pour le monitoring
+- Performance SSR/SSG optimisé, sécurité TypeScript + validation Zod
+- Accessibilité WCAG 2.1 AA, observabilité erreurs et métriques temps réel
 -->
 
 ---
@@ -238,6 +304,12 @@ src/
 └── prisma/           # Base de données
 ```
 
+<!--
+NOTES ORAL - Architecture logique :
+- L'architecture logique suit un DDD léger avec une séparation par domaines
+- Auth, contact-request, user, plus un dossier shared pour le code commun
+-->
+
 ---
 
 # Planning détaillé (C3.1) — Sprints S1→S6 (1/2)
@@ -254,6 +326,17 @@ src/
 | **S6** | 13/05→24/05 | Qualité (tests, a11y, perf), RGPD, mise en production  |
 
 </div>
+
+<!--
+NOTES ORAL - Planning détaillé Sprints :
+- Tableau détaillé des 6 sprints avec dates et objectifs
+- S1 cadrage fonctionnel et design
+- S2 vitrine + SEO
+- S3 formulaire contact avec upload
+- S4 authentification + rôles
+- S5 dashboard admin complet
+- S6 qualité, RGPD et mise en production
+-->
 
 ---
 
@@ -275,7 +358,12 @@ graph LR
 ```
 
 <!--
-Afficher les dates exactes adaptées à votre historique si différent; pointer les Reviews en fin de sprint.
+NOTES ORAL - Pilotage & Dépendances :
+- Phases : Étude → Conception → Réalisation → Recette → Déploiement
+- Chemin critique : formulaire → dashboard, auth → dashboard
+- Points de vigilance : quotas tiers, RGPD, performance
+- Dépendances identifiées avec diagramme
+- Tout converge vers production en S6
 -->
 
 ---
@@ -294,6 +382,16 @@ Afficher les dates exactes adaptées à votre historique si différent; pointer 
 
 **Lot 5 Qualité & RGPD** : tests, a11y, perf, registre
 
+<!--
+NOTES ORAL - Découpage fonctionnel :
+- 5 lots fonctionnels
+- Lot 1 Vitrine : pages, SEO, contenus
+- Lot 2 Contact : validation Zod, uploads 3×4MB max, emails Resend
+- Lot 3 Auth : Better Auth, gestion rôles
+- Lot 4 Dashboard : listing, recherche, filtres, tri, statuts, archivage
+- Lot 5 Qualité & RGPD : tests, a11y, perf, registre conformité
+-->
+
 ---
 
 # User Stories — Exemple détaillé (C3.1) (1/2)
@@ -311,6 +409,15 @@ Afficher les dates exactes adaptées à votre historique si différent; pointer 
 - ✅ Chaque fichier ≤4MB
 - ✅ Types acceptés (jpg/png/pdf)
 
+<!--
+NOTES ORAL - User Stories exemple (1/2) :
+- Prenons l'exemple de la user story US-VIS-02
+- "En tant que visiteur, je veux envoyer une demande de contact avec pièces jointes afin de préparer mon suivi"
+- Les critères d'acceptation sont précis
+- Validation Zod des données, maximum 3 fichiers, chaque fichier limité à 4MB
+- Types acceptés jpg/png/pdf
+-->
+
 ---
 
 # User Stories — Exemple détaillé (C3.1) — Suite (2/2)
@@ -321,12 +428,13 @@ Afficher les dates exactes adaptées à votre historique si différent; pointer 
 - ✅ E-mail Resend reçu
 - ✅ Entrée visible en dashboard statut = "Nouveau"
 
-### Preuves
-
-Issue #… → PR #… → Preview Vercel → Prod (SHA …)
-
 <!--
-Montrer 1 user story + critères d'acceptation + liens.
+NOTES ORAL - User Stories suite (2/2) :
+- Suite des critères d'acceptation
+- Message de succès affiché
+- Email Resend reçu par la diététicienne
+- Entrée visible dans le dashboard avec le statut "Nouveau"
+- Cette approche par user stories avec critères d'acceptation clairs facilite les tests et la validation client
 -->
 
 ---
@@ -367,7 +475,12 @@ Montrer 1 user story + critères d'acceptation + liens.
 </div>
 
 <!--
-Expliquer comment un RACI reste pertinent même en équipe de 1 (C/I ≠ R/A).
+NOTES ORAL - Ressources & Responsabilités :
+- Développeur unique : Adrien Poirier
+- RACI solo : Adrien = R/A tous lots
+- Consulted = Commanditaire
+- Services : Vercel, PostgreSQL, Sentry, Resend, UploadThing
+- RACI reste pertinent même en équipe de 1
 -->
 
 ---
@@ -408,15 +521,11 @@ graph LR
 </div>
 
 <!--
-Montrer 1 carte « Done » liée à une PR et au déploiement Preview.
--->
-
----
-
-<!-- removed orphan pipeline block -->
-
-<!--
-
+NOTES ORAL - Instances & Outil de suivi :
+- Pour le pilotage, j'utilise Trello comme outil de suivi principal
+- 4 colonnes : To do, In progress, Code review, Done
+- Traçabilité complète : carte Trello → branche GitHub → PR → Preview Vercel → Production
+- Cette traçabilité permet de suivre chaque fonctionnalité de l'idée à la mise en production
 -->
 
 ---
@@ -454,7 +563,11 @@ Montrer 1 carte « Done » liée à une PR et au déploiement Preview.
 </div>
 
 <!--
-Ajouter captures datées (burndown/vélocité Trello, tableau budget, cycle time) + script lighthouse:prod.
+NOTES ORAL - Indicateurs de pilotage :
+- Indicateurs couvrent plusieurs dimensions
+- Avancement & qualité : tests 1557/1557, coverage 56,64% → 70%
+- Performance & stabilité : Lighthouse 92/100/100/100, Sentry 0 erreur
+- Délais & budget : cycle time issue→prod, coûts 0€ paliers gratuits
 -->
 
 ---
@@ -480,6 +593,16 @@ Ajouter captures datées (burndown/vélocité Trello, tableau budget, cycle time
 
 </div>
 
+<!--
+NOTES ORAL - Suivi coûts & ressources (1/2) :
+- Concernant les coûts, j'ai fait un suivi précis des consommations
+- Vercel avec 45/72/38 GB sur les 3 mois pour 100GB autorisés
+- Resend avec 127/234/89 emails pour 3000 autorisés
+- UploadThing avec 0,8/1,2/0,6 GB pour 2GB autorisés
+- Et Sentry avec 23/67/12 erreurs pour 5000 autorisées
+- Total 0€ grâce aux paliers gratuits respectés
+-->
+
 ---
 
 # Suivi coûts & ressources (C3.2.1) — Suite (2/2)
@@ -491,7 +614,13 @@ Ajouter captures datées (burndown/vélocité Trello, tableau budget, cycle time
 - **Surveillance** : alertes à 80%
 
 <!--
-Insérer mini-tableau mensuel avec chiffres réels.
+NOTES ORAL - Suivi coûts :
+- Suivi précis des consommations
+- Vercel 45/72/38 GB sur 3 mois pour 100GB autorisés
+- Resend 127/234/89 emails pour 3000 autorisés
+- UploadThing 0,8/1,2/0,6 GB pour 2GB autorisés
+- Sentry 23/67/12 erreurs pour 5000 autorisées
+- Capacité 20h/semaine, WIP limité 1-2 tâches max
 -->
 
 ---
@@ -517,63 +646,62 @@ Insérer mini-tableau mensuel avec chiffres réels.
 
 **Exemple résolu** : Issue #1 (footer/email mobile) → corrigée S2
 
+### Détail Issue BUG-001
+
+**[BUG-001] Affichage email footer décale le contenu sur mobile**
+
+- **Problème** : L'email dans le footer provoque un débordement horizontal sur mobile (< 375px)
+- **Impact** : Scroll horizontal indésirable, dégradation UX mobile
+- **Solution** : CSS responsive avec `word-break: break-all` et classes Tailwind `break-all`
+- **Statut** : ✅ Fermée (commit e9deaf5)
+- **Environnement** : Tous navigateurs, iOS/Android, smartphones < 375px
+
 </div>
 
 </div>
 
 <!--
-Donner l'exemple de l'issue #1 (footer/email mobile) → corrigée.
+NOTES ORAL - Risques, dérives, actions :
+- J'ai identifié plusieurs types de risques : sécurité, régressions, quotas, RGPD
+- Détection via tests automatisés, Sentry monitoring, QA manuelle, retours client
+- Actions : hotfix branches fix/*, feature toggles, mises à jour dépendances
+- Registre des risques avec exemples : quota Vercel, régression auth
+- Exemple concret résolu : Issue BUG-001 footer email mobile
+- Problème débordement horizontal < 375px
+- Solution CSS responsive word-break + Tailwind, commit e9deaf5
 -->
 
 ---
 
-# Arbitrage (C3.2.2) — Cas réel documenté (1/3)
+# Arbitrage (C3.2.2) — Méthodologie & Critères
 
-## Problème (S3, 11/04)
+## Approche structurée
 
-Les fichiers **.HEIC** (iPhone) ne sont pas traités par la chaîne d'upload (UploadThing) → échec silencieux, risque de non-réception des pièces jointes avant la Sprint Review S3.
+**Critères d'aide à la décision** : Délai • Couverture besoin (≥95%) • Risque technique • Dette • Impact UX • Coût
 
-## Conséquences
+### Processus d'arbitrage
 
-Impact potentiel sur la **qualité** (perte d'info), **délais** (Review S3), et **support** (tickets utilisateurs).
+1. **Identification** du problème/contrainte
+2. **Analyse** des options possibles
+3. **Évaluation** selon critères définis
+4. **Décision** documentée et communiquée
+5. **Suivi** des impacts et ajustements
 
----
+### Principes
 
-# Arbitrage (C3.2.2) — Cas réel documenté — Suite (2/3)
+- **Transparence** avec la commanditaire
+- **Documentation** des rationales
+- **Traçabilité** des décisions
+- **Alignement** avec les objectifs projet
 
-### Option 1 ✅ — Réduire le périmètre
-
-- Types garantis (jpg/png/pdf)
-- Message d'aide
-- Validation client
-- **→ Livraison maintenue**
-
-### Option 2 — Décaler la livraison
-
-- Repousser Review d'1 semaine
-- Implémenter conversion serveur
-- **→ Retard Sprint Review**
-
----
-
-# Arbitrage (C3.2.2) — Décision & Critères (3/3)
-
-## Option 3 — Renforcer l'équipe
-
-- Recours externe ponctuel
-- Lib conversion HEIC → JPEG
-- **→ Coût/risque onboarding**
-
-## Critères d'aide à la décision
-
-Délai • Couverture besoin (≥95%) • Risque technique • Dette • Impact UX • Coût
-
-## Décision (11/04) → Option 1 retenue
-
-**Court terme** : Review S3 maintenue, formulaires fiables  
-**Long terme** : Dette planifiée S6 ("conversion HEIC")
-
-**Preuves** : Issue #34 → PR #56 → Preview (SHA 9f3c…) → CR client 11/04
+<!--
+NOTES ORAL - Arbitrage Méthodologie :
+- Pour l'arbitrage, méthodologie repose sur critères clairs
+- Délai, couverture besoin, risque technique, dette technique, impact UX, coût
+- Processus structuré : identification → analyse → évaluation → décision → suivi
+- Principes : transparence avec commanditaire, documentation rationales, traçabilité
+- Approche permet décisions éclairées en cas de contraintes ou imprévus
+-->
 
 ---
 
@@ -608,20 +736,25 @@ Délai • Couverture besoin (≥95%) • Risque technique • Dette • Impact 
 - **Exécution** : WIP ≤ 2, focus
 - **Adaptation** : Sprint Retrospective
 
-### Protocole handicap
+### Prise en compte du handicap
 
-- **Actuellement** : N/A
-- **Si extension équipe** :
-  - Protocole d'accueil défini
-  - Outils accessibles
-  - Formation pair-programming
+- **Accessibilité intégrée** : WCAG 2.1 AA
+- **Navigation clavier** complète
+- **Contrastes conformes** et focus visibles
+- **Sensibilité** aux besoins des personnes en situation de handicap
 
 </div>
 
 </div>
 
 <!--
-Expliquer l'auto-organisation et la priorisation.
+NOTES ORAL - Affectation des missions :
+- En tant que développeur unique, j'assume toutes les responsabilités
+- Conception UX, développement front/back/DB, tests et qualité, DevOps CI/CD, relation client
+- Auto-organisation rigoureuse nécessaire
+- Priorisation : Product Backlog ordonné, Sprint Planning hebdomadaire
+- Exécution WIP ≤ 2 pour maintenir focus, adaptation via Sprint Retrospectives
+- Prise en compte handicap via accessibilité WCAG 2.1 AA intégrée
 -->
 
 ---
@@ -637,14 +770,16 @@ Expliquer l'auto-organisation et la priorisation.
 - Co-construction contenus vitrine en Review
 - Validation UX/fonctionnalités
 
-<strong>🎯 Délégatif</strong>
-
-- N/A (équipe solo)
-- Mention si sous-traitance future
-
 </div>
 
 </div>
+
+<!--
+NOTES ORAL - Style managérial participatif :
+- Mon style managérial est participatif
+- Co-construis les contenus vitrine en Review
+- Valide l'UX et les fonctionnalités avec la commanditaire
+-->
 
 ---
 
@@ -682,7 +817,11 @@ Expliquer l'auto-organisation et la priorisation.
 </div>
 
 <!--
-Mini anecdote (choix formulaire vs chat, impact RGPD).
+NOTES ORAL - Analyse critique managériale :
+- Pour l'analyse critique, prenons le cas "prioriser RGPD vs Dashboard"
+- Ce qui a bien fonctionné : explication des risques juridiques, visualisation impacts métier, co-décision avec commanditaire
+- À améliorer : anticipation des dépendances, planification plus fine contraintes légales
+- Mes apprentissages : efficacité communication visuelle, importance implication client dans arbitrages, nécessité documenter décisions
 -->
 
 ---
@@ -733,7 +872,12 @@ Mini anecdote (choix formulaire vs chat, impact RGPD).
 </div>
 
 <!--
-Positionner la documentation comme alternative à Confluence.
+NOTES ORAL - Outils de communication :
+- Pour la communication, j'utilise plusieurs canaux
+- Sprint Reviews hebdomadaires en présentiel via Google Meet : ordre du jour structuré, démo Preview/Prod, décisions documentées, prochaines étapes claires
+- En asynchrone : emails pour CR formels et jalons, Trello pour commentaires et checklists, GitHub pour discussions techniques
+- Documentation : README pour architecture et scripts, Issues pour spécifications détaillées, PR pour contexte et review
+- Objectifs : traçabilité décisions et rationale, clarté compréhension mutuelle, engagement validation commanditaire
 -->
 
 ---
@@ -751,6 +895,15 @@ Positionner la documentation comme alternative à Confluence.
 
 </div>
 
+<!--
+NOTES ORAL - Grille évaluation compétences (1/2) :
+- J'ai établi une grille d'évaluation de mes compétences avec niveaux actuels et cibles
+- Next.js/React niveau 3 vers 4 : vitrine et dashboard en production, routing app dir maîtrisé, Server Actions implémentées
+- TypeScript strict niveau 3 vers 4 : tsc --noEmit clean, types Domain définis, schémas Zod alignés
+- Prisma/SQL niveau 2 vers 3 : migrations prisma migrate maîtrisées, indexations, seed contrôlé
+- Tests Jest/RTL niveau 2 vers 3 : 1557/1557 tests passants, 56,64% coverage avec objectif 70%
+-->
+
 ---
 
 <div class="card table-sm">
@@ -763,6 +916,14 @@ Positionner la documentation comme alternative à Confluence.
 | **Gestion de projet (Scrum)** | 3             | 4     | Sprints S1→S6 ; Reviews ; burndown ; vélocité             |
 
 </div>
+
+<!--
+NOTES ORAL - Grille évaluation compétences (2/2) :
+- Accessibilité WCAG niveau 3 vers 4 : Pa11y à 0 erreur, Lighthouse accessibilité à 100, navigation clavier et focus maîtrisés
+- CI/CD Vercel niveau 3 vers 4 : Preview par PR, VERCEL_GIT_COMMIT_SHA exposé
+- RGPD et sécurité niveau 2 vers 3 : Registre établi, DPA avec tous les fournisseurs, headers sécurisés
+- Gestion de projet Scrum niveau 3 vers 4 : Sprints S1 à S6 exécutés, Reviews régulières, burndown et vélocité suivis
+-->
 
 ---
 
@@ -789,7 +950,11 @@ Positionner la documentation comme alternative à Confluence.
 </div>
 
 <!--
-Prioriser selon l'impact projet et les besoins métier.
+NOTES ORAL - Écarts & priorités montée en compétences :
+- Les écarts clés identifiés concernent les tests d'intégration/e2e manquants avec coverage sous 70%
+- Prisma pour les requêtes avancées et transactions, et le pilotage avec des KPIs fonctionnels
+- Mes priorités de développement : Tests e2e avec Playwright pour les parcours Visiteur et Admin
+- Observabilité renforcée avec Sentry alerting et traces, RGPD avec registre complet et minimisation des données
 -->
 
 ---
@@ -816,7 +981,10 @@ Prioriser selon l'impact projet et les besoins métier.
 </div>
 
 <!--
-Lier développement des compétences aux objectifs projet.
+NOTES ORAL - Plan de développement :
+- Mon plan de développement inclut des formations Playwright, Prisma avancé, A11y WCAG 2.2, RGPD
+- Et de la pratique avec pair-review externe et objectifs trimestriels
+- Objectifs mesurables : coverage ≥ 70% d'ici le 30/06, 2 parcours e2e stables en S6, erreurs Sentry < 1% sur 30 jours glissants
 -->
 
 ---
@@ -847,7 +1015,12 @@ Lier développement des compétences aux objectifs projet.
 </div>
 
 <!--
-Exemple de 4-6 lignes anonymisé réel.
+NOTES ORAL - Comptes rendus & décisions :
+- Pour les comptes rendus, j'utilise un format email structuré : faits → décisions → risques → prochaines étapes
+- Envoyé après chaque Review et jalons, stocké dans les emails et le README
+- Exemple de CR anonymisé de la Review S3 : "Formulaire opérationnel, upload 3×4MB OK" pour les faits
+- "Validation S4 auth, priorisation rôles" pour les décisions, "Quota UploadThing 1,2GB/2GB" pour les risques
+- "S4 auth Better Auth, rôles, protection routes" pour les prochaines étapes
 -->
 
 ---
@@ -880,6 +1053,17 @@ Exemple de 4-6 lignes anonymisé réel.
 
 </div>
 
+<!--
+NOTES ORAL - Points de validation (1/2) :
+- Mes jalons et Reviews suivent les dates réelles
+- Fin mars vitrine/SEO validés (Review S2)
+- Mi-avril formulaire et email OK (Review S3)
+- Fin avril auth et rôles (Review S4)
+- Mi-mai dashboard complet (Review S5)
+- Fin mai qualité Lighthouse/Pa11y OK (Review S6)
+- Fin mai mise en production et démo finale
+-->
+
 ---
 
 # Points de validation (C3.4.1) — Suite (2/2)
@@ -903,7 +1087,19 @@ graph LR
 - Validation commanditaire
 
 <!--
-Chaque jalon = démo live sur Vercel Preview puis prod.
+NOTES ORAL - Points de validation (2/2) :
+- Le processus de validation suit un flow : Développement → Preview Vercel → Démo Review → Validation → Production ou Ajustements si nécessaire
+- Mes critères GO/NO-GO incluent tests passants, Lighthouse au-dessus des seuils, et validation commanditaire
+-->
+
+<!--
+NOTES ORAL - Points de validation :
+- Mes jalons et Reviews suivent les dates réelles
+- Fin mars vitrine/SEO validés, mi-avril formulaire et email OK
+- Fin avril auth et rôles, mi-mai dashboard complet
+- Fin mai qualité Lighthouse/Pa11y OK, fin mai mise en production et démo finale
+- Processus validation : Développement → Preview Vercel → Démo Review → Validation → Production
+- Critères GO/NO-GO : tests passants, Lighthouse au-dessus des seuils, validation commanditaire
 -->
 
 ---
@@ -930,7 +1126,10 @@ Chaque jalon = démo live sur Vercel Preview puis prod.
 </div>
 
 <!--
-Expliquer comment chaque KPI influence les priorités.
+NOTES ORAL - Indicateurs de satisfaction :
+- Pour la satisfaction, je mesure le NPS post-démo, questionnaire 1-5 après Review
+- Taux d'achèvement formulaire, délai création-traitement, taux de rebond pages vitrine
+- Qualité technique : erreurs Sentry sous 1%, Lighthouse avec performance ≥ 90, accessibilité 100, SEO 100, best practices 100
 -->
 
 ---
@@ -947,13 +1146,15 @@ Expliquer comment chaque KPI influence les priorités.
 
 ### Exemples & roadmap
 
-- **Corrigé** : Issue #1 (footer/email mobile) en S2
-- **Planifié** : Issue #34 (HEIC) en S6/S7
+- **Corrigé** : Issue #1 (BUG-001 - footer/email mobile) en S2
+  - Problème : débordement horizontal sur mobile < 375px
+  - Solution : `word-break: break-all` + classes Tailwind responsive
+  - Commit : e9deaf5
 
 ### Roadmap produit
 
 - **S6** : Tests e2e, RGPD, performance
-- **Q3 2025** : Module Devis, conversion HEIC
+- **Q3 2025** : Module Devis
 - **Q4 2025** : Notifications, export, API
 
 </div>
@@ -961,7 +1162,11 @@ Expliquer comment chaque KPI influence les priorités.
 </div>
 
 <!--
-Montrer avant/après si possible pour les améliorations.
+NOTES ORAL - Améliorations & évolutions :
+- La boucle d'amélioration suit : Retour client → Issue GitHub → Sprint Backlog → PR → Preview → Production
+- Exemple corrigé : Issue #1 BUG-001 footer/email mobile en S2, problème débordement horizontal < 375px
+- Solution word-break: break-all + classes Tailwind responsive, commit e9deaf5
+- Roadmap produit : S6 tests e2e/RGPD/perf, Q3 2025 module devis, Q4 2025 notifications/export/API
 -->
 
 ---
@@ -987,7 +1192,14 @@ Accueil → Prestations → Contact → Upload → Envoi → Confirmation
 </div>
 
 <!--
-Verrouiller réseau/onglets avant la démo; garder un jeu de fichiers test.
+NOTES ORAL - Démo Scénario Visiteur :
+- Maintenant, passons à la démonstration pratique
+- Je vais présenter deux scénarios : visiteur et administrateur
+- Site en production dietetique-et-interventions.manonchaillou.fr
+- Navigation responsive, SEO optimisé
+- Formulaire avec validation temps réel
+- Upload max 3 fichiers 4MB jpg/png/pdf
+- Message succès + email automatique Resend
 -->
 
 ---
@@ -1013,7 +1225,16 @@ Dashboard → Contact-requests → Détail → Statut → Archivage
 </div>
 
 <!--
-Verbaliser bénéfices métier : tri plus rapide, traçabilité, archivage.
+NOTES ORAL - Démo Scénario Admin :
+- Connectons-nous interface administration
+- Compte test : jury@ynov.com, mdp : d85pm832
+- Dashboard administrateur Better Auth avec rôles
+- Liste demandes avec filtres par statut
+- Recherche nom/email, tri colonnes
+- Détail demande avec pièces jointes téléchargeables
+- Changement statut tracé avec horodatage
+- Archivage respect obligations RGPD
+- Navigation accessible clavier, focus visibles WCAG 2.1 AA
 -->
 
 ---
@@ -1054,5 +1275,14 @@ Verbaliser bénéfices métier : tri plus rapide, traçabilité, archivage.
 </div>
 
 </div>
+
+<!--
+NOTES ORAL - Critères de validation :
+- Cette démonstration valide tous critères fonctionnels
+- Couverture fonctionnalités attendues, robustesse, traçabilité
+- Critères techniques : accessibilité navigation clavier, performance réactivité UI, sécurité authentification
+- Critères qualité : UX fluide, design responsive, SEO optimisé, code maintenable testé
+- Cette "version utilisable" validée par commanditaire et répond aux objectifs fixés
+-->
 
 ---
