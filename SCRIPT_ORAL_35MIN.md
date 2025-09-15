@@ -2,118 +2,122 @@
 
 ## Introduction (2 minutes)
 
-Bonjour. Je suis Adrien Poirier et je vous présente aujourd'hui mon projet de Bloc 3 : "Diététique et Interventions".
+Bonjour ! Je suis Adrien Poirier et je vais vous présenter mon projet de Bloc 3 : "Diététique et Interventions".
 
-L'objectif était de créer un site vitrine avec un back-office de gestion des demandes de contact pour une diététicienne nutritionniste. Le site est actuellement en production à l'adresse dietetique-et-interventions.manonchaillou.fr, et le code source est disponible sur GitHub.
+Le défi ? Créer un site web complet pour une diététicienne. D'un côté, un site vitrine pour présenter ses services. De l'autre, un espace d'administration privé pour gérer toutes les demandes de contact. Le site fonctionne déjà en ligne à l'adresse dietetique-et-interventions.manonchaillou.fr, et tout le code est accessible sur GitHub.
 
-Ma présentation va couvrir tous les aspects du référentiel, de la planification à la démonstration, en passant par le pilotage, l'arbitrage, le management d'équipe et le suivi client.
+Aujourd'hui, je vais vous raconter comment j'ai mené ce projet de A à Z : la planification, le pilotage, les décisions importantes, et bien sûr une démo en direct !
 
 ---
 
 ## Sommaire et Méthodologie (3 minutes)
 
-Comme vous pouvez le voir sur cette slide, j'ai structuré ma présentation pour couvrir l'ensemble des compétences du référentiel C3.1 à C3.4.2.
+Comme vous le voyez, j'ai organisé ma présentation autour des compétences du référentiel. Chaque point sera illustré avec des exemples concrets !
 
-Pour ce projet, j'ai choisi d'adapter la méthodologie Scrum à un contexte de développeur unique. Pourquoi Scrum ? Parce que même en solo, cette approche apporte de la structure, de la transparence et permet une amélioration continue.
+Pour organiser ce projet, j'ai choisi la méthode Scrum. "Scrum tout seul ?", vous allez me dire. Eh bien oui ! Même en solo, cette méthode m'apporte un cadre structuré et me permet de m'améliorer en continu.
 
-J'ai adapté les rôles : la commanditaire joue le rôle de Product Owner, j'assume celui de Scrum Master comme facilitateur, et bien sûr je suis l'équipe de développement. Les sprints durent 2 semaines, ce qui permet un rythme soutenu tout en gardant de la flexibilité.
+Concrètement, j'ai réparti les rôles : la diététicienne devient la "Product Owner" - elle définit les besoins. Moi, je joue à la fois le "Scrum Master" qui organise, et l'équipe de développement qui code. Je travaille par cycles de 2 semaines, ce qui me donne un bon rythme sans me mettre trop de pression.
 
-Les événements Scrum ont été adaptés : le Sprint Planning dure 1 heure en début de sprint, le Daily est asynchrone via le board Trello pour éviter la surcharge, les Sprint Reviews sont hebdomadaires en présentiel pour maintenir l'alignement client, et les rétrospectives de fin de sprint durent 20-30 minutes pour l'amélioration continue.
+Les rituels Scrum, je les ai adaptés à ma sauce : je planifie chaque cycle en 1 heure, je fais le point quotidien via mon tableau Trello plutôt qu'en réunion, je présente les avancées chaque semaine à la cliente, et je prends 20-30 minutes en fin de cycle pour réfléchir à ce qui peut être amélioré.
 
-Les artifacts incluent le Product Backlog géré dans Trello, le Sprint Backlog visible sur le board, une Definition of Done claire avec lint, type-check, tests, preview OK et validation client, et l'increment déployé automatiquement sur Vercel.
+Pour l'organisation, j'utilise Trello pour gérer mes tâches, j'ai défini des critères clairs pour dire qu'une fonctionnalité est "finie" (tests OK, cliente validée), et chaque nouvelle version se déploie automatiquement sur internet.
 
 ---
 
 ## Planification et Architecture (5 minutes)
 
-Pour la planification, j'ai utilisé Trello comme outil principal avec une structure board/sprints et des milestones clairs. Voici le board que j'utilise quotidiennement.
+Pour m'organiser, j'ai mis en place un tableau Trello - c'est mon tableau de bord quotidien. Vous le voyez ici avec mes colonnes "À faire", "En cours", "En test" et "Terminé".
 
-J'ai défini 6 sprints de 2 semaines chacun :
+J'ai découpé le projet en 6 étapes de 2 semaines :
 
-- S1 pour le cadrage fonctionnel et design
-- S2 pour la vitrine et le SEO
-- S3 pour le formulaire de contact avec upload
-- S4 pour l'authentification et les rôles
-- S5 pour le dashboard administrateur
-- S6 pour la qualité, le RGPD et la mise en production
+- Étape 1 : on définit ensemble le projet et le design
+- Étape 2 : je crée le site vitrine avec un bon référencement Google
+- Étape 3 : j'ajoute le formulaire de contact avec possibilité d'envoyer des fichiers
+- Étape 4 : je mets en place la connexion sécurisée pour l'administration
+- Étape 5 : je développe l'espace privé pour gérer les demandes
+- Étape 6 : je peaufine la qualité et je mets tout en ligne
 
-Cette planification respecte les dépendances : le formulaire doit être prêt avant le dashboard, l'authentification aussi, et tout converge vers la production en S6.
+C'est logique : il faut d'abord le formulaire avant de pouvoir gérer les demandes, et il faut la connexion sécurisée avant l'espace admin. Tout se termine par la mise en production.
 
-Côté architecture technique, j'ai opté pour une stack moderne et robuste : Next.js 15 avec React 19 pour le frontend, TypeScript strict pour la sécurité du code, Tailwind CSS pour le styling, et Radix UI avec shadcn/ui pour les composants.
+Voici la timeline complète sur 3 mois. Chaque étape a son jalon de validation - c'est là que la cliente valide ou demande des ajustements.
 
-Le backend utilise les Server Actions de Next.js combinées aux API Routes, avec Prisma ORM pour la base de données PostgreSQL. L'infrastructure repose sur Vercel pour l'hébergement et le CI/CD, Better Auth pour l'authentification, et plusieurs services comme Resend pour les emails et UploadThing pour les fichiers.
+Côté technique, j'ai choisi des technologies modernes et fiables. Pour l'interface utilisateur, j'utilise Next.js et React - des outils très populaires pour créer des sites web interactifs. J'ai ajouté TypeScript pour éviter les erreurs de code, et Tailwind CSS pour un design propre et responsive.
 
-Pour la qualité, j'ai mis en place Jest avec React Testing Library, Lighthouse pour la performance, Pa11y pour l'accessibilité, et Sentry pour le monitoring.
+Pour la partie serveur, je stocke les données dans une base PostgreSQL, j'utilise Vercel pour héberger le site (avec déploiement automatique), et plusieurs services spécialisés : Resend pour envoyer les emails automatiquement, UploadThing pour gérer l'envoi de fichiers, et Sentry pour surveiller les erreurs.
 
-L'architecture logique suit un DDD léger avec une séparation par domaines : auth, contact-request, user, plus un dossier shared pour le code commun.
+Côté qualité, j'ai mis en place des tests automatiques, des vérifications de performance avec Lighthouse, et des contrôles d'accessibilité pour que le site soit utilisable par tous.
+
+J'ai organisé mon code de manière logique : un dossier pour tout ce qui concerne l'authentification, un autre pour les demandes de contact, etc. Ça rend le code plus facile à maintenir.
 
 ---
 
 ## Découpage fonctionnel et User Stories (3 minutes)
 
-Le projet a été découpé en 5 lots fonctionnels :
+J'ai découpé le projet en 5 grandes parties :
 
-- Lot 1 Vitrine avec pages, SEO et contenus
-- Lot 2 Contact avec validation Zod, uploads limités à 3 fichiers de 4MB max, et envoi d'emails via Resend
-- Lot 3 Auth avec Better Auth et gestion des rôles
-- Lot 4 Dashboard avec listing, recherche, filtres, tri, détail, changement de statut et archivage
-- Lot 5 Qualité et RGPD avec tests, accessibilité, performance et registre de conformité
+- Partie 1 : Le site vitrine avec toutes les pages et un bon référencement
+- Partie 2 : Le formulaire de contact qui permet d'envoyer jusqu'à 3 fichiers de 4MB maximum, avec envoi automatique d'email
+- Partie 3 : Le système de connexion sécurisé pour accéder à l'administration
+- Partie 4 : L'espace privé avec la liste des demandes, la recherche, les filtres, et la gestion des statuts
+- Partie 5 : Tous les aspects qualité : tests, accessibilité, performance et conformité RGPD
 
-Prenons l'exemple de la user story US-VIS-02 : "En tant que visiteur, je veux envoyer une demande de contact avec pièces jointes afin de préparer mon suivi."
+Pour bien définir les besoins, j'utilise des "user stories" - des petites histoires qui décrivent ce que veut faire l'utilisateur. Par exemple : "En tant que visiteur, je veux envoyer une demande de contact avec des pièces jointes pour préparer mon suivi."
 
-Les critères d'acceptation sont précis : validation Zod des données, maximum 3 fichiers, chaque fichier limité à 4MB, types acceptés jpg/png/pdf, message de succès affiché, email Resend reçu par la diététicienne, et entrée visible dans le dashboard avec le statut "Nouveau".
+Pour chaque histoire, je définis des critères précis : 3 fichiers maximum, 4MB par fichier, formats jpg/png/pdf acceptés, message de confirmation affiché, email automatique envoyé à la diététicienne, et demande visible dans l'espace admin avec le statut "Nouveau".
 
-Cette approche par user stories avec critères d'acceptation clairs facilite les tests et la validation client.
+Cette méthode m'aide à ne rien oublier et facilite les tests avec la cliente.
 
 ---
 
 ## Pilotage et Indicateurs (4 minutes)
 
-Pour le pilotage, j'utilise Trello comme outil de suivi principal avec 4 colonnes : To do, In progress, Code review, Done. Chaque carte Trello est liée à une branche GitHub, puis à une Pull Request, puis à un déploiement Preview Vercel, et enfin à la production.
+Pour suivre l'avancement, mon tableau Trello a 4 colonnes : "À faire", "En cours", "En révision" et "Terminé". Chaque tâche suit un parcours complet : elle devient une branche de code, puis une demande de fusion, puis un test en ligne, et enfin une mise en production.
 
-Cette traçabilité complète permet de suivre chaque fonctionnalité de l'idée à la mise en production.
+Cette traçabilité me permet de suivre chaque fonctionnalité de l'idée jusqu'à sa mise en ligne.
 
-Mes indicateurs de pilotage couvrent plusieurs dimensions :
+Je surveille plusieurs indicateurs pour m'assurer que tout va bien :
 
-Pour l'avancement et la qualité : tous les tests passent (1557/1557), avec un coverage de 56,64% que je vise à porter à 70%.
+Pour la qualité du code : tous mes 1557 tests automatiques passent au vert, et j'ai 56% de couverture de code (j'aimerais atteindre 70%).
 
-Pour la performance et la stabilité : Lighthouse affiche un score de 92 en performance, 100 en accessibilité, 100 en SEO, 100 en best practices, et Sentry rapporte 0 erreur.
+Pour les performances du site : Lighthouse me donne 92/100 en vitesse, et 100/100 en accessibilité, référencement et bonnes pratiques. Sentry me confirme 0 erreur en production.
 
-Pour les délais et le budget : je mesure le cycle time de l'issue à la production, et les coûts restent à 0€ grâce aux paliers gratuits de tous les services.
+Pour les délais et le budget : je mesure le temps entre une idée et sa mise en ligne, et surtout, le projet me coûte 0€ car j'utilise les versions gratuites de tous les services !
 
-Concernant les coûts, j'ai fait un suivi précis des consommations : Vercel avec 45/72/38 GB sur les 3 mois pour 100GB autorisés, Resend avec 127/234/89 emails pour 3000 autorisés, UploadThing avec 0,8/1,2/0,6 GB pour 2GB autorisés, et Sentry avec 23/67/12 erreurs pour 5000 autorisées.
+J'ai surveillé de près ma consommation des services gratuits : Vercel pour l'hébergement (45, 72 et 38 GB sur les 3 mois, limite à 100GB), Resend pour les emails (127, 234 et 89 emails envoyés, limite à 3000), UploadThing pour les fichiers (0,8 à 1,2 GB utilisés sur 2GB autorisés), et Sentry pour le monitoring (23 à 67 erreurs détectées sur 5000 autorisées).
 
-J'ai une capacité de 20h/semaine avec un WIP limité à 1-2 tâches maximum pour maintenir le focus.
+Je travaille environ 20h par semaine sur le projet, et je me limite à 1 ou 2 tâches en parallèle pour rester concentré.
 
 ---
 
 ## Gestion des Risques et Arbitrage (4 minutes)
 
-J'ai identifié plusieurs types de risques : sécurité, régressions, dépassement de quotas, et conformité RGPD. La détection se fait via les tests automatisés, Sentry pour le monitoring, la QA manuelle, et les retours client. Les actions incluent les hotfix sur branches `fix/*`, les feature toggles, et les mises à jour de dépendances.
+J'ai anticipé plusieurs types de problèmes possibles : sécurité, bugs qui cassent des fonctionnalités existantes, dépassement des quotas gratuits, et respect du RGPD. Pour les détecter, je m'appuie sur mes tests automatiques, Sentry qui surveille les erreurs, mes vérifications manuelles, et les retours de la cliente.
 
-Mon registre des risques documente par exemple le risque de quota Vercel (impact moyen, probabilité faible) avec monitoring et plan B, et le risque de régression auth (impact élevé, probabilité moyenne) mitigé par les tests e2e.
+Quand un problème survient, j'ai mes solutions : correction rapide sur une branche spéciale, activation/désactivation de fonctionnalités, ou mise à jour des dépendances.
 
-Je peux vous donner un exemple concret de risque résolu : l'Issue BUG-001 sur l'affichage email du footer. Le problème était que l'email dans le footer provoquait un débordement horizontal sur mobile pour les écrans inférieurs à 375px, créant un scroll horizontal indésirable. J'ai résolu cela avec du CSS responsive utilisant `word-break: break-all` et les classes Tailwind appropriées. Cette issue a été fermée avec le commit e9deaf5.
+Dans mon tableau des risques, j'ai par exemple le risque de dépasser les quotas Vercel (impact moyen mais peu probable), avec surveillance et plan B. Ou le risque de casser la connexion (impact élevé, probabilité moyenne) que je limite avec des tests automatiques.
 
-Pour l'arbitrage, ma méthodologie repose sur des critères clairs : délai, couverture du besoin, risque technique, dette technique, impact UX et coût. Cette approche structurée me permet de prendre des décisions éclairées en cas de contraintes ou d'imprévus, toujours en maintenant la transparence avec la commanditaire et en documentant les rationales pour la traçabilité.
+Exemple concret : le bug de l'email dans le footer. Sur les petits écrans de téléphone, l'adresse email était trop longue et créait un scroll horizontal gênant. J'ai corrigé ça avec du CSS qui coupe proprement le texte. Problème identifié, résolu et documenté !
+
+Pour prendre des décisions importantes, j'ai mes critères : respecter les délais, couvrir le besoin, évaluer le risque technique, l'impact sur l'expérience utilisateur et le coût. Je reste toujours transparent avec la cliente et je documente mes choix.
 
 ---
 
 ## Management et Communication (3 minutes)
 
-En tant que développeur unique, j'assume toutes les responsabilités : conception UX, développement front/back/DB, tests et qualité, DevOps CI/CD, et relation client. Cette situation nécessite une auto-organisation rigoureuse.
+En solo, je porte toutes les casquettes : designer, développeur front et back, testeur, responsable du déploiement, et chargé de relation client. Ça demande une organisation au top !
 
-Ma priorisation se base sur le Product Backlog ordonné, la planification via Sprint Planning hebdomadaire, l'exécution avec un WIP limité à 2 pour maintenir le focus, et l'adaptation via les Sprint Retrospectives.
+Je priorise avec ma liste de tâches ordonnée, je planifie chaque semaine, j'exécute en me limitant à 2 tâches max en parallèle pour rester focus, et je m'améliore grâce aux rétrospectives.
 
-Bien qu'en contexte solo, j'ai intégré la prise en compte du handicap dans le développement : le site respecte les standards WCAG 2.1 AA avec navigation clavier complète, contrastes conformes, et focus visibles. Cette démarche d'accessibilité démontre ma sensibilité aux besoins des personnes en situation de handicap.
+Même en travaillant seul, j'ai pensé à l'accessibilité à deux niveaux : dans le site lui-même avec les standards d'accessibilité (navigation au clavier, contrastes, etc.), et dans mon organisation de travail avec de la documentation claire, des enregistrements des présentations à la cliente, des sous-titres automatiques sur Google Meet, et la possibilité d'adapter les réunions si nécessaire.
 
-Mon style managérial est participatif : je co-construis les contenus vitrine en Review et valide l'UX et les fonctionnalités avec la commanditaire.
+Mon style de management avec la cliente est collaboratif : on construit ensemble les contenus du site pendant nos points hebdomadaires, et je valide l'expérience utilisateur avec elle.
 
-Pour l'analyse critique, prenons le cas "prioriser RGPD vs Dashboard". Ce qui a bien fonctionné : l'explication des risques juridiques, la visualisation des impacts métier, et la co-décision avec la commanditaire. À améliorer : l'anticipation des dépendances et une planification plus fine des contraintes légales.
+Prenons un exemple concret d'arbitrage : fallait-il prioriser la conformité RGPD ou le dashboard ? Ce qui a bien marché : j'ai expliqué clairement les risques juridiques, montré l'impact sur l'activité, et on a décidé ensemble avec la cliente. À améliorer : j'aurais dû mieux anticiper les dépendances et planifier plus finement les contraintes légales.
 
-Mes apprentissages incluent l'efficacité de la communication visuelle, l'importance de l'implication client dans les arbitrages, et la nécessité de documenter les décisions.
+Mes apprentissages : les schémas et visuels sont super efficaces pour expliquer, impliquer le client dans les décisions importantes c'est essentiel, et il faut absolument documenter les choix.
 
-Pour la communication, j'utilise plusieurs canaux : Sprint Reviews hebdomadaires en présentiel via Google Meet avec ordre du jour structuré, démo Preview/Prod, décisions documentées et prochaines étapes claires. En asynchrone : emails pour les CR formels et jalons, Trello pour les commentaires et checklists, GitHub pour les discussions techniques. La documentation passe par le README pour l'architecture et scripts, les Issues pour les spécifications détaillées, et les PR pour le contexte et review.
+Pour communiquer, j'ai plusieurs moyens : des points hebdomadaires en visio avec Google Meet (ordre du jour, démo en direct, décisions prises, prochaines étapes), des emails pour les comptes-rendus officiels, Trello pour les commentaires sur les tâches, et GitHub pour les discussions techniques. Côté documentation : le README explique l'architecture, les tickets détaillent les spécifications, et les demandes de fusion donnent le contexte.
 
 ---
 
@@ -173,73 +177,73 @@ La roadmap produit prévoit pour S6 : tests e2e, RGPD, performance. Q3 2025 : mo
 
 ## Démonstration (8 minutes)
 
-Maintenant, passons à la démonstration pratique. Je vais vous présenter deux scénarios : visiteur et administrateur.
+Allez, place à la démo ! Je vais vous montrer le site en action avec deux parcours : visiteur et administrateur.
 
-**Scénario Visiteur** (4 minutes)
+**Côté visiteur** (4 minutes)
 
-Je me rends sur le site en production : dietetique-et-interventions.manonchaillou.fr
+Je vais sur le site en ligne : dietetique-et-interventions.manonchaillou.fr
 
 [Navigation sur le site]
 
-Vous voyez l'accueil avec une présentation claire des services. Le site est entièrement responsive, comme vous pouvez le constater en redimensionnant la fenêtre.
+Voilà l'accueil avec une présentation claire des services. Le site s'adapte automatiquement à toutes les tailles d'écran - regardez quand je redimensionne la fenêtre.
 
-Je navigue vers "Prestations" pour voir le détail des services proposés. Le SEO est optimisé avec des meta descriptions et une structure sémantique.
+Je clique sur "Prestations" pour voir le détail des services. Tout est optimisé pour Google avec de bonnes descriptions et une structure claire.
 
-Maintenant, dirigeons-nous vers "Contact". Voici le formulaire avec validation en temps réel. Je vais remplir les champs requis : nom, prénom, email, téléphone, et message.
+Maintenant, direction "Contact". Voici le formulaire avec vérification en direct. Je remplis les champs obligatoires : nom, prénom, email, téléphone et message.
 
-Pour les pièces jointes, je peux ajouter jusqu'à 3 fichiers de maximum 4MB chacun. Les types acceptés sont jpg, png et pdf. Regardez, si j'essaie d'ajouter un 4ème fichier, le système me l'interdit. Si j'ajoute un fichier trop volumineux ou d'un mauvais type, j'ai une validation côté client.
+Pour les pièces jointes, on peut envoyer jusqu'à 3 fichiers de 4MB maximum. Formats acceptés : jpg, png et pdf. Regardez, si j'essaie d'ajouter un 4ème fichier, le système m'arrête. Si je mets un fichier trop gros ou d'un mauvais format, j'ai une alerte immédiate.
 
 [Démonstration upload de fichiers]
 
-Une fois le formulaire soumis, vous voyez le message de succès et la diététicienne reçoit automatiquement un email via Resend avec toutes les informations et les pièces jointes.
+Une fois envoyé, j'ai un message de confirmation et la diététicienne reçoit automatiquement un email avec tout le contenu et les fichiers joints.
 
-**Scénario Administrateur** (4 minutes)
+**Côté administrateur** (4 minutes)
 
-Maintenant, connectons-nous à l'interface d'administration avec le compte test : jury@ynov.com, mot de passe : d85pm832
+Maintenant, connectons-nous à l'espace privé avec le compte de test : jury@ynov.com, mot de passe : d85pm832
 
 [Connexion au dashboard]
 
-Voici le dashboard administrateur. L'authentification est gérée par Better Auth avec des rôles. Seuls les utilisateurs autorisés peuvent accéder à cette interface.
+Et voilà l'espace d'administration ! La connexion est sécurisée avec des rôles - seules les personnes autorisées peuvent y accéder.
 
-Dans "Contact Requests", je vois la liste de toutes les demandes avec plusieurs informations : nom, email, date de création, statut, et actions possibles.
+Dans "Demandes de contact", je vois la liste complète avec toutes les infos : nom, email, date, statut, et les actions possibles.
 
-Je peux filtrer par statut : Nouveau, En cours, Traité, Archivé. La recherche fonctionne sur le nom et l'email. Le tri est possible sur toutes les colonnes.
+Je peux filtrer par statut : Nouveau, En cours, Traité, Archivé. La recherche marche sur le nom et l'email. Je peux trier toutes les colonnes.
 
 [Démonstration des filtres et recherche]
 
-Cliquons sur une demande pour voir le détail. J'ai accès à toutes les informations soumises : coordonnées complètes, message, et les pièces jointes téléchargeables.
+Je clique sur une demande pour voir le détail. J'ai tout : coordonnées complètes, message, et les fichiers joints téléchargeables.
 
-Je peux changer le statut directement depuis cette interface. Par exemple, passer de "Nouveau" à "En cours", puis à "Traité". Chaque changement est tracé avec horodatage.
+Je peux changer le statut direct depuis cette page. Par exemple, passer de "Nouveau" à "En cours", puis à "Traité". Chaque changement est daté et tracé.
 
 [Démonstration changement de statut]
 
-L'archivage permet de masquer les anciennes demandes sans les supprimer, respectant ainsi les obligations de conservation RGPD.
+L'archivage permet de ranger les anciennes demandes sans les supprimer - ça respecte les obligations légales de conservation.
 
-La navigation est entièrement accessible au clavier, comme vous pouvez le voir, et tous les éléments interactifs ont des focus visibles conformes aux standards WCAG 2.1 AA.
+Tout est navigable au clavier pour l'accessibilité, et chaque élément interactif a un focus bien visible.
 
 ---
 
 ## Critères de Validation et Conclusion (2 minutes)
 
-Cette démonstration valide tous les critères fonctionnels : couverture des fonctionnalités attendues, robustesse avec validation et gestion d'erreurs, traçabilité avec statuts et archives.
+Cette démo valide tout ce qui était demandé : toutes les fonctionnalités marchent, c'est robuste avec les vérifications et la gestion d'erreurs, tout est tracé avec les statuts et l'archivage.
 
-Les critères techniques sont respectés : accessibilité avec navigation clavier et focus, performance avec réactivité UI, sécurité avec authentification et validation.
+Côté technique, c'est bon aussi : accessible au clavier avec des focus visibles, performant et réactif, sécurisé avec l'authentification et les validations.
 
-Les critères qualité incluent une UX fluide, un design responsive mobile/desktop, un SEO optimisé, et un code maintenable et testé.
+Et niveau qualité : expérience utilisateur fluide, design qui s'adapte partout (mobile/desktop), bien référencé sur Google, et code propre et testé.
 
-Cette "version utilisable" a été validée par la commanditaire et répond aux objectifs fixés.
+Cette version finale a été validée par la cliente et répond parfaitement à ses besoins.
 
-**Conclusion**
+**Pour conclure**
 
-Ce projet de 3 mois m'a permis de démontrer ma capacité à coordonner et piloter un projet de développement complet, de la planification à la livraison.
+Ces 3 mois de projet m'ont permis de vous montrer que je sais mener un projet de développement de bout en bout.
 
-J'ai adapté avec succès la méthodologie Scrum à un contexte solo, maintenu une qualité élevée avec 0 erreur en production, respecté les délais avec 6 sprints livrés, et maîtrisé les coûts en restant dans les paliers gratuits.
+J'ai réussi à adapter Scrum en solo, maintenir une qualité au top avec zéro erreur en production, respecter tous les délais avec mes 6 étapes, et maîtriser les coûts en restant dans le gratuit.
 
-Les compétences du référentiel sont toutes couvertes avec des preuves concrètes : planification rigoureuse, pilotage par indicateurs, arbitrage documenté, management adaptatif, développement des compétences, et suivi client régulier.
+Toutes les compétences du référentiel sont couvertes avec des exemples concrets : planification structurée, pilotage avec des indicateurs, décisions documentées, management collaboratif, montée en compétences, et suivi client régulier.
 
-Le site est en production, utilisé quotidiennement, et prêt pour les évolutions futures planifiées.
+Le site tourne en production, la cliente l'utilise tous les jours, et il est prêt pour les évolutions prévues.
 
-Je vous remercie pour votre attention et reste à votre disposition pour vos questions.
+Merci pour votre attention ! Je suis là pour vos questions.
 
 ---
 

@@ -368,6 +368,41 @@ NOTES ORAL - Pilotage & Dépendances :
 
 ---
 
+# Retroplanning & Jalons (C3.1)
+
+## Vue chronologique des sprints et jalons
+
+```mermaid
+gantt
+    title Planning Projet Diététique et Interventions
+    dateFormat  YYYY-MM-DD
+    section Sprints
+    S1 Cadrage           :s1, 2025-03-04, 2025-03-15
+    S2 Vitrine           :s2, 2025-03-18, 2025-03-29
+    S3 Contact           :s3, 2025-04-01, 2025-04-12
+    S4 Auth              :s4, 2025-04-15, 2025-04-26
+    S5 Dashboard         :s5, 2025-04-29, 2025-05-10
+    S6 Qualité & Prod    :s6, 2025-05-13, 2025-05-24
+    section Jalons
+    J1 Vitrine/SEO       :milestone, j1, 2025-03-29, 0d
+    J2 Formulaire OK     :milestone, j2, 2025-04-12, 0d
+    J3 Auth & rôles      :milestone, j3, 2025-04-26, 0d
+    J4 Dashboard         :milestone, j4, 2025-05-10, 0d
+    J5 Qualité OK        :milestone, j5, 2025-05-24, 0d
+    J6 Prod & Démo       :milestone, j6, 2025-05-24, 0d
+```
+
+<!--
+NOTES ORAL - Retroplanning & Jalons :
+- Vue chronologique complète du projet sur 3 mois
+- 6 sprints de 2 semaines avec jalons de validation client
+- Les milestones J1-J6 matérialisent les points de validation exigés par le référentiel
+- Distinction claire : sprints = périodes de travail, jalons = moments de validation
+- Chemin critique visible : S3→S5, S4→S5, convergence finale vers production
+-->
+
+---
+
 # Découpage en lots & user stories (C3.1)
 
 ## Lots fonctionnels
@@ -481,6 +516,59 @@ NOTES ORAL - Ressources & Responsabilités :
 - Consulted = Commanditaire
 - Services : Vercel, PostgreSQL, Sentry, Resend, UploadThing
 - RACI reste pertinent même en équipe de 1
+-->
+
+---
+
+# Validation C3.1 — Synthèse des preuves
+
+## Planifier l'exécution du projet ✅
+
+<div class="grid grid-cols-2 gap-6 text-sm">
+
+<div class="card compact">
+
+### Méthodologie & Outils
+
+- **Scrum adapté solo** : rôles/événements/artéfacts
+- **Trello** : release plan, milestones S1→S6
+- **Retroplanning Gantt** : vue chronologique + jalons
+
+### Découpage & Architecture
+
+- **5 lots fonctionnels** + user stories + critères
+- **Architecture stack** détaillée (3 slides)
+- **DDD léger** par domaines
+
+</div>
+
+<div class="card compact">
+
+### Planning & Ressources
+
+- **Planning détaillé** S1→S6 avec dépendances
+- **Chemin critique** : S3→S5, S4→S5
+- **Ressources identifiées** : Vercel, PostgreSQL, Sentry...
+- **RACI solo** : R/A tous domaines
+
+### Inclusivité
+
+- **Accessibilité produit** : WCAG 2.1 AA
+- **Organisation inclusive** : docs, enregistrements, sous-titres
+
+</div>
+
+</div>
+
+<!--
+NOTES ORAL - Validation C3.1 :
+- Récapitulatif des preuves pour la compétence C3.1 Planifier l'exécution du projet
+- Méthodologie Scrum adaptée avec tous les éléments : rôles, événements, artéfacts
+- Outils de planification Trello avec retroplanning Gantt visuel
+- Découpage complet en lots avec user stories et critères d'acceptation
+- Architecture technique et logique détaillées
+- Planning avec dépendances et chemin critique identifiés
+- Ressources et RACI définis, prise en compte handicap produit + organisation
 -->
 
 ---
@@ -738,9 +826,12 @@ NOTES ORAL - Arbitrage Méthodologie :
 
 ### Prise en compte du handicap
 
-- **Accessibilité intégrée** : WCAG 2.1 AA
-- **Navigation clavier** complète
-- **Contrastes conformes** et focus visibles
+- **Accessibilité produit** : WCAG 2.1 AA, navigation clavier, contrastes conformes
+- **Organisation inclusive** :
+  - Documentation accessible et lisible
+  - Enregistrements des Sprint Reviews
+  - Sous-titres automatiques Google Meet
+  - Aménagement réunions si nécessaire
 - **Sensibilité** aux besoins des personnes en situation de handicap
 
 </div>
@@ -754,7 +845,8 @@ NOTES ORAL - Affectation des missions :
 - Auto-organisation rigoureuse nécessaire
 - Priorisation : Product Backlog ordonné, Sprint Planning hebdomadaire
 - Exécution WIP ≤ 2 pour maintenir focus, adaptation via Sprint Retrospectives
-- Prise en compte handicap via accessibilité WCAG 2.1 AA intégrée
+- Prise en compte handicap : accessibilité produit WCAG 2.1 AA + organisation inclusive
+- Documentation accessible, enregistrements Reviews, sous-titres Meet, aménagements réunions
 -->
 
 ---
