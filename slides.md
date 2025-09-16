@@ -104,18 +104,18 @@ NOTES ORAL - Rôles Scrum adaptés :
 
 ### Événements
 
-| Événement                | Format               | Durée     | Objectif                        |
-| ------------------------ | -------------------- | --------- | ------------------------------- |
-| **Sprint Planning**      | Début sprint         | 1h        | Objectif sprint, sprint backlog |
-| **Daily**                | Asynchrone via board | 5 min     | Blocages, priorités du jour     |
-| **Sprint Review**        | Hebdo présentiel     | -         | Démo increment Preview/Prod     |
-| **Sprint Retrospective** | Fin de sprint        | 20-30 min | Amélioration processus          |
+| Événement                | Format                        | Durée     | Objectif                        |
+| ------------------------ | ----------------------------- | --------- | ------------------------------- |
+| **Sprint Planning**      | Début sprint                  | 1h        | Objectif sprint, sprint backlog |
+| **Daily**                | Asynchrone via board          | 5 min     | Blocages, priorités du jour     |
+| **Sprint Review**        | Fin sprint (visio/présentiel) | -         | Démo increment Preview/Prod     |
+| **Sprint Retrospective** | Fin de sprint                 | 20-30 min | Amélioration processus          |
 
 <!--
 NOTES ORAL - Événements Scrum adaptés :
 📋 PLANNING : "Je planifie chaque cycle en 1 heure - objectif + tâches à faire"
 📱 DAILY MALIN : "Je fais le point quotidien via mon tableau Trello plutôt qu'en réunion - évite la surcharge !"
-🎥 REVIEWS CLÉS : "Je présente les avancées chaque semaine à la cliente - maintient l'alignement"
+🎥 REVIEWS CLÉS : "Je présente les avancées toutes les 2 semaines à la cliente (visio ou présentiel) - maintient l'alignement"
 🔄 RÉTRO UTILE : "Je prends 20-30 minutes en fin de cycle pour réfléchir à ce qui peut être amélioré"
 💡 ADAPTATION : "Tous les rituels Scrum, mais adaptés à ma sauce pour du solo efficace"
 ➡️ TRANSITION : "Et pour organiser tout ça, j'ai mes outils..."
@@ -494,60 +494,6 @@ NOTES ORAL - Ressources & Responsabilités :
 
 ---
 
-# Validation C3.1 — Synthèse des preuves
-
-## Planifier l'exécution du projet ✅
-
-<div class="grid grid-cols-2 gap-6 text-sm">
-
-<div class="card compact">
-
-### Méthodologie & Outils
-
-- **Scrum adapté solo** : rôles/événements/artéfacts
-- **Trello** : release plan, milestones S1→S6
-- **Retroplanning Gantt** : vue chronologique + jalons
-
-### Découpage & Architecture
-
-- **5 lots fonctionnels** + user stories + critères
-- **Architecture stack** détaillée (3 slides)
-- **DDD léger** par domaines
-
-</div>
-
-<div class="card compact">
-
-### Planning & Ressources
-
-- **Planning détaillé** S1→S6 avec dépendances
-- **Chemin critique** : S3→S5, S4→S5
-- **Ressources identifiées** : Vercel, PostgreSQL, Sentry...
-- **RACI solo** : R/A tous domaines
-
-### Inclusivité
-
-- **Accessibilité produit** : WCAG 2.1 AA
-- **Organisation inclusive** : docs, enregistrements, sous-titres
-
-</div>
-
-</div>
-
-<!--
-NOTES ORAL - Validation C3.1 :
-• BILAN COMPÉTENCE : "Voilà mon bilan pour C3.1 'Planifier l'exécution du projet' ! 📊"
-• SCRUM COMPLET : "Méthodologie Scrum adaptée avec TOUS les éléments : rôles, événements, artéfacts"
-• OUTILS PRO : "Trello + Gantt visuel - planification de chef de projet ! 🗺️"
-• DÉCOUPAGE NICKEL : "Lots + user stories + critères d'acceptation - tout est cadré !"
-• ARCHITECTURE SOLIDE : "Architecture technique ET logique détaillées - du sérieux !"
-• PLANNING MAÎTRISÉ : "Dépendances + chemin critique identifiés - pas de surprise !"
-• INCLUSIVITÉ : "Ressources + RACI + prise en compte handicap - approche complète ! 🌈"
-• MISSION ACCOMPLIE : "C3.1 validé avec des preuves béton !"
--->
-
----
-
 # Instances & outil de suivi (C3.2.1)
 
 ## Instances Scrum
@@ -913,7 +859,7 @@ NOTES ORAL - Analyse critique :
 
 ### Présentiel/Visio
 
-**Sprint Reviews hebdomadaires** (Google Meet)
+**Sprint Reviews bi-mensuelles** (visio/présentiel)
 
 - Ordre du jour structuré
 - Démo Preview/Prod
@@ -953,7 +899,7 @@ NOTES ORAL - Analyse critique :
 <!--
 NOTES ORAL - Outils de communication :
 • MULTI-CANAUX : "J'utilise plusieurs canaux pour bien communiquer ! 📡"
-• REVIEWS LIVE : "Sprint Reviews hebdo en visio Google Meet - ordre du jour carré, démo live !"
+• REVIEWS LIVE : "Sprint Reviews toutes les 2 semaines en visio/présentiel - ordre du jour carré, démo live !"
 • DÉCISIONS CLAIRES : "Décisions documentées, prochaines étapes nettes - pas de flou !"
 • ASYNCHRONE MALIN : "Emails pour les CR officiels, Trello pour les commentaires, GitHub pour le technique"
 • DOCUMENTATION VIVANTE : "README pour l'archi, Issues pour les specs, PR pour le contexte"
