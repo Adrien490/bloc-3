@@ -517,22 +517,6 @@ NOTES ORAL - Suivi coûts & ressources :
 
 ---
 
-# Suivi coûts & ressources (C3.2.1)
-
-### Capacité & risques
-
-- **WIP** : 1–2 max • **Disponibilité** : 5h/semaine
-
-<!--
-NOTES ORAL - Capacité & risques :
-• DISPONIBILITÉ : "Je travaille 5h/semaine sur le projet"
-• FOCUS MAXIMUM : "Je me limite à 1-2 tâches en parallèle - ça évite la dispersion !"
-• ANTICIPATION : "Si je dépasse les quotas → j'optimise ou je mets du cache"
-• SURVEILLANCE : "J'ai des alertes à 80% pour anticiper les problèmes"
-• MAÎTRISE : "Comme ça, pas de mauvaise surprise ! 🎯"
--->
-
----
 
 # Risques, dérives, actions (C3.2.1)
 
@@ -640,7 +624,7 @@ NOTES ORAL - Cas d'arbitrage concret :
 </div>
 
 <!--
-NOTES ORAL - Grillultats (1:30) :
+NOTES ORAL - Décision & Résultats (1:30) :
 • MATRICE APPLIQUÉE : "J'ai chiffré chaque option - Option 2 gagne 7.95/10 !"
 • DÉCISION CLAIRE : "RGPD prioritaire - risque juridique inacceptable vs 1 semaine décalage"
 • COMMUNICATION CLÉS : "J'ai expliqué les enjeux légaux - elle a adhéré !"
@@ -1040,10 +1024,6 @@ NOTES ORAL - Indicateurs de satisfaction :
 
 - **S6** : Tests e2e, RGPD, performance
 - Module Devis
-
-</div>
-
-</div>
 
 <!--
 NOTES ORAL - Améliorations & évolutions :
