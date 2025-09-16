@@ -27,7 +27,7 @@ fonts:
 ### Coordonner et piloter un projet de développement d'applications logicielles
 
 <div class="mt-6 card brand">
-  <strong>Mars → Juin 2025 (3 mois) — Développeur unique</strong>
+  <strong>Mars → Mai 2025 (~12 semaines) — Développeur unique</strong>
   
 </div>
 
@@ -76,72 +76,50 @@ NOTES ORAL (3min) - Sommaire & Méthodologie :
 
 ---
 
-# Méthodologie choisie (C3.1) — Scrum
+# Méthodologie Scrum adaptée solo (C3.1)
 
-## Approche Agile Scrum adaptée à un développeur unique
+<div class="grid grid-cols-2 gap-6 text-sm">
 
-**Timeboxes sprints :** 2 semaines
+<div class="card accent">
 
-### Rôles
+### Rôles adaptés
 
-- **Product Owner** = commanditaire
+- **Product Owner** = Commanditaire (besoins)
 - **Scrum Master** = Adrien (facilitateur)
-- **Dev Team** = Adrien
+- **Dev Team** = Adrien (réalisation)
+
+**Timeboxes** : Sprints de 2 semaines
+
+</div>
+
+<div class="card">
+
+### Événements allégés
+
+- **Sprint Planning** : 1h début sprint
+- **Daily** : Asynchrone via board Trello
+- **Sprint Review** : Fin sprint (visio/présentiel)
+- **Retrospective** : 20-30min amélioration
+
+</div>
+
+</div>
+
+### Artifacts & Definition of Done
+
+**Product Backlog** : Trello ordonné • **Sprint Backlog** : Board visible  
+**Definition of Done** : lint + type-check + tests + Preview OK + validation cliente  
+**Increment** : Déploiement automatique Vercel
 
 <!--
-NOTES ORAL - Rôles Scrum adaptés :
-🎯 CONTEXTE : "Concrètement, j'ai réparti les rôles même en solo"
-👩‍💼 PRODUCT OWNER : "La diététicienne devient la 'Product Owner' - elle définit les besoins"
-🎪 DOUBLE CASQUETTE : "Moi, je joue à la fois le 'Scrum Master' qui organise, et l'équipe de développement qui code"
-📅 TIMEBOXING : "Je travaille par cycles de 2 semaines - ça donne un bon rythme sans me mettre trop de pression"
-💪 BÉNÉFICES : "Même en solo, ça m'apporte structure, transparence et amélioration continue"
-➡️ TRANSITION : "Voyons maintenant comment j'organise ces cycles..."
--->
-
----
-
-# Méthodologie choisie (C3.1) — Scrum — Événements
-
-### Événements
-
-| Événement                | Format                        | Durée     | Objectif                        |
-| ------------------------ | ----------------------------- | --------- | ------------------------------- |
-| **Sprint Planning**      | Début sprint                  | 1h        | Objectif sprint, sprint backlog |
-| **Daily**                | Asynchrone via board          | 5 min     | Blocages, priorités du jour     |
-| **Sprint Review**        | Fin sprint (visio/présentiel) | -         | Démo increment Preview/Prod     |
-| **Sprint Retrospective** | Fin de sprint                 | 20-30 min | Amélioration processus          |
-
-<!--
-NOTES ORAL - Événements Scrum adaptés :
-📋 PLANNING : "Je planifie chaque cycle en 1 heure - objectif + tâches à faire"
-📱 DAILY MALIN : "Je fais le point quotidien via mon tableau Trello plutôt qu'en réunion - évite la surcharge !"
-🎥 REVIEWS CLÉS : "Je présente les avancées toutes les 2 semaines à la cliente (visio ou présentiel) - maintient l'alignement"
-🔄 RÉTRO UTILE : "Je prends 20-30 minutes en fin de cycle pour réfléchir à ce qui peut être amélioré"
-💡 ADAPTATION : "Tous les rituels Scrum, mais adaptés à ma sauce pour du solo efficace"
-➡️ TRANSITION : "Et pour organiser tout ça, j'ai mes outils..."
--->
-
----
-
-# Méthodologie choisie (C3.1) — Scrum
-
-### Artifacts
-
-- **Product Backlog** : Trello
-- **Sprint Backlog** : Board
-- **Definition of Done** : lint + type-check + tests + Preview OK + CR client
-- **Increment** : déploiement Vercel
-
-✅ Transparence • Amélioration continue
-
-<!--
-NOTES ORAL - Artifacts Scrum :
-📝 PRODUCT BACKLOG : "J'utilise Trello pour gérer mes tâches - ma liste de souhaits ordonnée"
-📊 SPRINT BACKLOG : "Chaque cycle, je sélectionne les tâches dans mon tableau visible"
-✅ DEFINITION OF DONE : "J'ai défini des critères clairs pour dire qu'une fonctionnalité est 'finie' : tests OK, cliente validée"
-🚀 INCREMENT : "Chaque nouvelle version se déploie automatiquement sur internet via Vercel"
-🎯 RÉSULTAT : "Ça me donne transparence et amélioration continue, même en solo !"
-➡️ TRANSITION : "Maintenant, voyons comment je planifie concrètement..."
+NOTES ORAL - Scrum adapté solo (1:30) :
+• ADAPTATION SOLO : "J'ai utilisé Scrum en solo - commanditaire = Product Owner, je cumule Scrum Master + dev"
+• TIMEBOXES : "Sprints de 2 semaines - bon rythme sans pression !"
+• RITUELS ALLÉGÉS : "Planning 1h au début, daily asynchrone via board, review avec démo, rétro 20 min"
+• DOD CLAIRE : "Definition of Done précise : lint, types, tests, preview OK, validation cliente"
+• ARTIFACTS : "Product Backlog Trello, Sprint Backlog visible, Increment déployé auto Vercel"
+• BÉNÉFICES : "Structure, transparence avec la cliente, amélioration continue - même en solo ! 💪"
+• TRANSITION : "Mon cockpit pour tout ça, c'est Trello..."
 -->
 
 ---
@@ -150,27 +128,30 @@ NOTES ORAL - Artifacts Scrum :
 
 ![Board Trello](./board.png)
 
+### Assignation claire des tâches
+
+**Chaque carte Trello** est assignée à Adrien avec checklist, critères d'acceptation et lien PR
+
 <!--
-NOTES ORAL - Board Trello en action :
-📱 PRÉSENTATION : "Voici le board que j'utilise quotidiennement - mon cockpit de projet !"
-🏗️ STRUCTURE : "À faire, En cours, En test, Terminé - workflow clair et simple"
-🔍 TRAÇABILITÉ : "Chaque carte suit son parcours complet de l'idée à la production"
-👀 TRANSPARENCE : "La cliente peut voir l'avancement en temps réel"
-💪 EFFICACITÉ : "Ça m'évite de me perdre et ça rassure tout le monde !"
+NOTES ORAL - Board Trello en action (1:15) :
+• COCKPIT : "Mon cockpit, c'est Trello : À faire → En cours → CR → Terminé"
+• ASSIGNATION : "Chaque carte Trello est assignée à Adrien avec checklist, critères d'acceptation et lien PR"
+• TRAÇABILITÉ : "Chaque carte suit le flux jusqu'à la prod. La commanditaire voit l'avancement en temps réel"
+• TRANSPARENCE : "Workflow clair et simple - ça m'évite de me perdre !"
 -->
 
 ---
 
-# Outil de planification (C3.1)
+# Planification — Jalons & Sprints (C3.1)
 
 ### Milestones
 
-- **S1** (04/03→15/03) : Cadrage
-- **S2** (18/03→29/03) : Vitrine
-- **S3** (01/04→12/04) : Contact
-- **S4** (15/04→26/04) : Auth
-- **S5** (29/04→10/05) : Dashboard
-- **S6** (13/05→24/05) : Qualité & Prod
+- **S1** (04/03→15/03) : Cadrage ✅
+- **S2** (18/03→29/03) : Vitrine ✅
+- **S3** (01/04→12/04) : Contact ✅
+- **S4** (15/04→26/04) : Auth ✅
+- **S5** (29/04→10/05) : Dashboard ✅
+- **S6** (13/05→24/05) : Qualité & Prod ✅
 
 Vue sprint + réordonnancement simple, alignement avec Reviews/CR
 
@@ -188,171 +169,80 @@ NOTES ORAL - Milestones (5min début) :
 
 ---
 
-# Architecture & stack (C3.1)
-
-<div class="grid grid-cols-2 gap-8 text-sm equal-cols">
-
-<div class="card">
-
-### Front-end
-
-- **Next.js 15** - Framework React
-- **React 19** - Interface utilisateur
-- **TypeScript strict** - Typage fort
-- **Tailwind CSS** - Styling
-- **Radix UI + shadcn/ui** - Composants
-
-### Back-end
-
-- **Server Actions** + API Routes
-- **Prisma ORM** - Base de données
-
- </div>
-
-</div>
-
-<!--
-NOTES ORAL - Architecture & Stack (1/2) :
-🔧 INTRODUCTION : "Côté technique, j'ai choisi des technologies modernes et fiables"
-💻 FRONTEND : "Next.js et React - des outils très populaires pour créer des sites web interactifs"
-🛡️ SÉCURITÉ : "J'ai ajouté TypeScript pour éviter les erreurs de code"
-🎨 DESIGN : "Tailwind CSS pour un design propre et responsive"
-🧩 COMPOSANTS : "Radix UI avec shadcn/ui pour des composants réutilisables"
-⚡ BACKEND : "Server Actions Next.js + API Routes pour la partie serveur"
-🗃️ DATA : "Prisma ORM + PostgreSQL pour stocker les données"
-➡️ TRANSITION : "Et pour l'infrastructure..."
--->
-
----
-
-# Architecture & stack (C3.1)
+# Architecture & Stack technique (C3.1)
 
 <div class="grid grid-cols-3 gap-6 text-sm equal-cols">
 
 <div class="card accent">
 
-### Infrastructure
+### Stack Principal
 
-- **PostgreSQL** - Base de données
+- **Next.js 15 + React 19** - Framework full-stack
+- **TypeScript strict** - Typage sécurisé
+- **Prisma + PostgreSQL** - Base de données
 - **Better Auth** - Authentification
+
+</div>
+
+<div class="card">
+
+### Infrastructure & Déploiement
+
 - **Vercel** - Hébergement & CI/CD
+- **Tailwind + Radix UI** - Design system
+- **Server Actions** - API moderne
+- **Sentry** - Monitoring erreurs
 
 </div>
 
 <div class="card">
 
-### Qualité & Observabilité
+### Qualité & Standards
 
-- **Jest + RTL** - Tests
-- **Lighthouse** - Performance
-- **Pa11y** - Accessibilité
-- **Sentry** - Monitoring
-
-</div>
-
-<div class="card">
-
-- **Performance** : SSR/SSG optimisé
-- **Sécurité** : TypeScript + validation Zod
-- **Accessibilité** : WCAG 2.1 AA
-- **Observabilité** : Erreurs & métriques temps réel
+- **Jest + RTL** - Tests automatisés
+- **Lighthouse** - Performance (92/100)
+- **Pa11y** - Accessibilité WCAG 2.1 AA
+- **Architecture DDD** - Domaines séparés
 
 </div>
 
 </div>
 
-<!--
-NOTES ORAL - Architecture & Stack (2/2) - Infrastructure & Qualité :
-🌐 HÉBERGEMENT : "Vercel pour héberger le site - déploiement automatique à chaque mise à jour"
-🔐 AUTHENTIFICATION : "Better Auth pour la connexion sécurisée + PostgreSQL pour stocker les données"
-🧪 QUALITÉ : "Jest avec React Testing Library pour tester automatiquement mon code"
-⚡ PERFORMANCE : "Lighthouse pour mesurer la vitesse du site"
-♿ ACCESSIBILITÉ : "Pa11y pour vérifier que le site est accessible à tous"
-🚨 MONITORING : "Sentry pour surveiller les erreurs en temps réel"
-🛡️ SÉCURITÉ : "TypeScript + validation Zod pour éviter les failles"
-🏆 STANDARDS : "Tout respecte WCAG 2.1 AA pour l'accessibilité"
-➡️ TRANSITION : "Cette architecture me permet de découper le projet en grandes parties..."
--->
-
----
-
-# Architecture logique (C3.1)
-
-## DDD léger : séparation par domaines
+### Organisation du code (DDD léger)
 
 ```
-src/
-├── app/              # Routes & layouts Next.js
-├── domains/          # Logique métier
-│   ├── auth/         # Authentification
-│   ├── contact-request/  # Demandes de contact
-│   └── user/         # Gestion utilisateurs
-├── shared/           # Code partagé
-│   ├── components/   # UI components
-│   ├── actions/      # Server actions
-│   ├── hooks/        # Hooks React
-│   ├── utils/        # Utilitaires
-│   └── schemas/      # Schémas Zod
-└── prisma/           # Base de données
+domains/ → auth/ + contact-request/ + user/
+shared/ → components/ + actions/ + utils/
 ```
 
 <!--
-NOTES ORAL - Architecture logique DDD :
-🏗️ ORGANISATION : "J'ai organisé le code en domaines logiques - du Domain-Driven Design léger"
-🔐 AUTH : "Domaine 'Auth' = tout ce qui concerne la connexion et les rôles"
-📧 CONTACT-REQUEST : "Domaine 'Contact-Request' = gestion des demandes des visiteurs"
-👤 USER : "Domaine 'User' = profils et données utilisateurs"
-🤝 SHARED : "Dossier 'Shared' = composants et utilitaires communs"
-💡 AVANTAGE : "Code bien rangé, chaque chose à sa place !"
-🔧 MAINTENANCE : "Plus facile à maintenir et faire évoluer"
-➡️ TRANSITION : "Maintenant, voyons comment j'ai planifié les sprints..."
+NOTES ORAL - Architecture & Stack :
+• STACK MODERNE : "Stack technique moderne et fiable - Next.js 15, React 19, TypeScript !"
+• BASE SOLIDE : "Prisma + PostgreSQL pour les données, Better Auth pour la sécurité"
+• INFRA PRO : "Vercel pour l'hébergement avec déploiement auto, Tailwind pour le design"
+• QUALITÉ AU TOP : "Tests Jest, Lighthouse 92/100, accessibilité WCAG 2.1 AA parfaite !"
+• CODE ORGANISÉ : "Architecture DDD léger - chaque domaine à sa place"
+• MONITORING : "Sentry pour surveiller les erreurs - 0 erreur en prod !"
+• TRANSITION : "Avec cette base solide, voyons la planification..."
 -->
 
 ---
 
-# Planning détaillé (C3.1) — Sprints S1→S6
+# Planning & Jalons (C3.1)
 
-<div class="text-sm card">
-
-| Sprint | Dates       | Objectifs                                              |
-| ------ | ----------- | ------------------------------------------------------ |
-| **S1** | 04/03→15/03 | Cadrage fonctionnel, design, contenus vitrine          |
-| **S2** | 18/03→29/03 | Vitrine + SEO                                          |
-| **S3** | 01/04→12/04 | Formulaire contact (validation, upload ≤3×4MB, e-mail) |
-| **S4** | 15/04→26/04 | Authentification + rôles                               |
-| **S5** | 29/04→10/05 | Dashboard admin (listing, filtres, statuts, archivage) |
-| **S6** | 13/05→24/05 | Qualité (tests, a11y, perf), RGPD, mise en production  |
-
-</div>
-
-<!--
-NOTES ORAL - Planning détaillé Sprints :
-• TABLEAU COMPLET : "Voici le détail de mes 6 sprints avec dates et objectifs précis !"
-• S1 CADRAGE : "Sprint 1 = on pose les bases : projet + design ensemble"
-• S2 VITRINE : "Sprint 2 = je crée le site public + SEO pour Google"
-• S3 CONTACT : "Sprint 3 = formulaire avec upload de fichiers - technique !"
-• S4 CONNEXION : "Sprint 4 = authentification sécurisée + gestion des rôles"
-• S5 DASHBOARD : "Sprint 5 = espace admin complet - le cœur du système !"
-• S6 FINITIONS : "Sprint 6 = qualité, RGPD et mise en production - la touche finale ! 🏁"
--->
-
----
-
-# Retroplanning & Jalons (C3.1)
-
-## Vue chronologique des sprints et jalons
+## Vue chronologique complète
 
 ```mermaid
 gantt
     title Planning Projet Diététique et Interventions
     dateFormat  YYYY-MM-DD
     section Sprints
-    S1 Cadrage           :s1, 2025-03-04, 2025-03-15
-    S2 Vitrine           :s2, 2025-03-18, 2025-03-29
-    S3 Contact           :s3, 2025-04-01, 2025-04-12
-    S4 Auth              :s4, 2025-04-15, 2025-04-26
-    S5 Dashboard         :s5, 2025-04-29, 2025-05-10
-    S6 Qualité & Prod    :s6, 2025-05-13, 2025-05-24
+    S1 Cadrage           :done, s1, 2025-03-04, 2025-03-15
+    S2 Vitrine           :done, s2, 2025-03-18, 2025-03-29
+    S3 Contact           :done, s3, 2025-04-01, 2025-04-12
+    S4 Auth              :done, s4, 2025-04-15, 2025-04-26
+    S5 Dashboard         :done, s5, 2025-04-29, 2025-05-10
+    S6 Qualité & Prod    :done, s6, 2025-05-13, 2025-05-24
     section Jalons
     J1 Vitrine/SEO       :milestone, j1, 2025-03-29, 0d
     J2 Formulaire OK     :milestone, j2, 2025-04-12, 0d
@@ -362,14 +252,20 @@ gantt
     J6 Prod & Démo       :milestone, j6, 2025-05-24, 0d
 ```
 
+### Jalons de validation
+
+✅ **J1-J6** : Points de validation commanditaire alignés fin de sprints clés  
+✅ **Chemin critique** : S3+S4 → S5 → S6 (formulaire+auth → dashboard → production)
+
 <!--
-NOTES ORAL - Retroplanning & Jalons :
-• VUE CHRONOLOGIQUE : "Voici la vue d'ensemble sur 3 mois - tout est planifié ! 📅"
-• RYTHME RÉGULIER : "6 sprints de 2 semaines avec jalons de validation cliente"
-• JALONS OFFICIELS : "J1 à J6 = les points de validation exigés par le référentiel - carré !"
-• DISTINCTION CLAIRE : "Sprints = je bosse, jalons = on valide ensemble"
-• CHEMIN CRITIQUE : "S3→S5, S4→S5 - tout converge vers la production finale ! 🎯"
-• VISIBILITÉ TOTALE : "Avec ce Gantt, on voit tout d'un coup d'œil !"
+NOTES ORAL - Planning & Jalons (2:00) :
+• VUE COMPLÈTE : "J'ai structuré le projet en 6 sprints : cadrage, vitrine, contact, auth, dashboard, qualité/production"
+• GANTT VISUEL : "Les jalons sont calés en fin de sprints clés : vitrine/SEO, formulaire, auth, dashboard, qualité, mise en prod + démo"
+• DÉPENDANCES : "On visualise d'un coup d'œil les dépendances et le chemin critique"
+• CHEMIN CRITIQUE : "S3 formulaire + S4 auth convergent vers S5 dashboard puis S6 production"
+• JALONS RÉFÉRENTIEL : "J1 à J6 = points de validation exigés par le référentiel - tout carré !"
+• PHASES CLASSIQUES : "Étude → Conception → Réalisation → Recette → Déploiement"
+• POINTS VIGILANCE : "Quotas tiers, RGPD, performance - anticipés dès la planification"
 -->
 
 ---
@@ -401,49 +297,49 @@ NOTES ORAL - Découpage fonctionnel :
 
 ---
 
-# User Stories — Exemple détaillé (C3.1)
+# User Stories — Exemple complet (C3.1)
 
 ## User Story (US-VIS-02)
 
 **En tant que** visiteur,  
 **Je veux** envoyer une demande de contact avec pièces jointes  
-**Afin de** préparer mon suivi.
+**Afin de** préparer mon suivi nutritionnel.
 
-### Critères d'acceptation
+<div class="grid grid-cols-2 gap-6 text-sm">
 
-- ✅ Validation Zod
-- ✅ ≤3 fichiers
-- ✅ Chaque fichier ≤4MB
-- ✅ Types acceptés (jpg/png/pdf)
+<div class="card compact">
+
+### Critères d'acceptation techniques
+
+- ✅ **Validation Zod** des données
+- ✅ **≤3 fichiers** maximum
+- ✅ **≤4MB** par fichier
+- ✅ **Types** : jpg/png/pdf uniquement
+
+</div>
+
+<div class="card compact">
+
+### Critères d'acceptation fonctionnels
+
+- ✅ **Message succès** affiché
+- ✅ **E-mail automatique** via Resend
+- ✅ **Entrée dashboard** statut "Nouveau"
+- ✅ **Traçabilité** complète
+
+</div>
+
+</div>
 
 <!--
-NOTES ORAL - User Stories exemple (1/2) :
-• EXEMPLE CONCRET : "Prenons l'user story US-VIS-02 - du concret !"
-• USER STORY : "'En tant que visiteur, je veux envoyer une demande avec fichiers pour préparer mon suivi'"
-• CRITÈRES PRÉCIS : "Les critères d'acceptation sont ultra-précis - pas de flou !"
-• VALIDATION TECHNIQUE : "Validation Zod des données - sécurité avant tout !"
-• LIMITES CLAIRES : "Max 3 fichiers, 4MB chacun, jpg/png/pdf seulement"
-• CADRE NET : "Comme ça, tout le monde sait ce qui est attendu ! 🎯"
--->
-
----
-
-# User Stories — Exemple détaillé (C3.1)
-
-### Critères d'acceptation (suite)
-
-- ✅ Message succès
-- ✅ E-mail Resend reçu
-- ✅ Entrée visible en dashboard statut = "Nouveau"
-
-<!--
-NOTES ORAL - User Stories suite (2/2) :
-• SUITE CRITÈRES : "Et ce n'est pas fini - suite des critères !"
-• MESSAGE SUCCÈS : "Message de succès affiché - feedback utilisateur !"
-• EMAIL AUTO : "Email Resend reçu par la diététicienne - notification immédiate !"
-• DASHBOARD SYNC : "Entrée visible dans le dashboard statut 'Nouveau' - traçabilité totale !"
-• MÉTHODE GAGNANTE : "User stories + critères précis = tests faciles + validation cliente nickel ! 🏆"
-• EFFICACITÉ : "Pas de surprise, tout est cadré dès le départ !"
+NOTES ORAL - User Stories complètes :
+• EXEMPLE CONCRET : "Prenons l'user story US-VIS-02 - exemple complet !"
+• USER STORY CLAIRE : "'En tant que visiteur, je veux envoyer une demande avec fichiers pour préparer mon suivi'"
+• CRITÈRES TECHNIQUES : "Validation Zod, max 3 fichiers 4MB, jpg/png/pdf - cadre technique précis !"
+• CRITÈRES FONCTIONNELS : "Message succès, email auto, entrée dashboard - expérience utilisateur complète !"
+• MÉTHODE GAGNANTE : "User stories + critères détaillés = développement sans surprise ! 🎯"
+• BÉNÉFICES : "Tests faciles, validation cliente nickel, développement guidé !"
+• TRANSITION : "Cette méthode s'applique à toutes nos user stories..."
 -->
 
 ---
@@ -494,23 +390,35 @@ NOTES ORAL - Ressources & Responsabilités :
 
 ---
 
-# Instances & outil de suivi (C3.2.1)
+# Pilotage & Suivi quotidien (C3.2.1)
 
-## Instances Scrum
+## Différence Planification vs Pilotage
 
 <div class="grid grid-cols-2 gap-6 text-sm">
 
 <div class="card">
 
-### Outil de suivi : Trello
+### Planification (cadrage)
 
-- **Colonnes** : To do / In progress / Code review / Done
+- **Roadmap** : Jalons & sprints
+- **Backlog** : User stories ordonnées
+- **Vision** : Objectifs & milestones
 
 </div>
 
-<div class="card">
+<div class="card accent">
 
-### Traçabilité
+### Pilotage (suivi quotidien)
+
+- **Workflow** : To do → In progress → Review → Done
+- **Traçabilité** : Trello → GitHub → Vercel → Prod
+- **Monitoring** : Daily via board, transparence cliente
+
+</div>
+
+</div>
+
+### Flux de traçabilité technique
 
 ```mermaid
 graph LR
@@ -519,15 +427,6 @@ graph LR
     C --> D[Preview Vercel]
     D --> E[Prod]
 ```
-
-### Cohérence méthodologique
-
-- Daily adapté via board
-- Transparence avec la diététicienne
-
-</div>
-
-</div>
 
 <!--
 NOTES ORAL - Instances & Outil de suivi :
@@ -565,7 +464,6 @@ NOTES ORAL - Instances & Outil de suivi :
 
 ### Délais & Budget
 
-- **Cycle time** : issue → prod (Y jours)
 - **Coûts** : 0€ (paliers gratuits)
 
 </div>
@@ -646,7 +544,7 @@ NOTES ORAL - Capacité & risques :
 
 - **Risques** : bugs divers, sécurité
 - **Détection** : tests, Sentry, retours client
-- **Actions** : hotfix `fix/*`, feature toggle, patch deps
+- **Actions** : hotfix `fix/*`
 
 ### Registre des risques
 
@@ -656,16 +554,6 @@ NOTES ORAL - Capacité & risques :
 | Régression auth | Élevé  | Moyen       | Adrien       | Tests e2e          |
 
 **Exemple résolu** : Issue #1 (footer/email mobile) → corrigée S2
-
-### Détail Issue BUG-001
-
-**[BUG-001] Affichage email footer décale le contenu sur mobile**
-
-- **Problème** : L'email dans le footer provoque un débordement horizontal sur mobile (< 375px)
-- **Impact** : Scroll horizontal indésirable, dégradation UX mobile
-- **Solution** : CSS responsive avec `word-break: break-all` et classes Tailwind `break-all`
-- **Statut** : ✅ Fermée (commit e9deaf5)
-- **Environnement** : Tous navigateurs, iOS/Android, smartphones < 375px
 
 </div>
 
@@ -685,123 +573,139 @@ NOTES ORAL - Risques & actions :
 
 ---
 
-# Arbitrage (C3.2.2) — Méthodologie & Critères
+# Arbitrage (C3.2.2) — Cas concret
 
-## Approche structurée
+<div class="grid grid-cols-2 gap-6">
 
-**Critères d'aide à la décision** : Délai • Couverture besoin (≥95%) • Risque technique • Dette • Impact UX • Coût
+<div class="card compact">
 
-### Processus d'arbitrage
+### Problématique exposée
 
-1. **Identification** du problème/contrainte
-2. **Analyse** des options possibles
-3. **Évaluation** selon critères définis
-4. **Décision** documentée et communiquée
-5. **Suivi** des impacts et ajustements
+**Sprint S4** : Retard auth → impact S5
 
-### Principes
+**Dilemme** : Dashboard OU RGPD ?
 
-- **Transparence** avec la commanditaire
-- **Documentation** des rationales
-- **Traçabilité** des décisions
-- **Alignement** avec les objectifs projet
+**Conséquences** :
+
+- Risque juridique vs délai
+- Satisfaction client vs conformité
+
+</div>
+
+<div class="card compact">
+
+### Options détaillées
+
+**Option 1** : Dashboard prioritaire  
+✅ Démo S5 • ❌ Risque juridique
+
+**Option 2** : RGPD prioritaire ✅  
+✅ Conformité • ❌ Décalage +1 sem
+
+**Option 3** : Équipe renforcée  
+✅ Délais OK • ❌ Coût +2k€
+
+</div>
+
+</div>
 
 <!--
-NOTES ORAL - Arbitrage méthodologie :
-• CRITÈRES CLAIRS : "Pour les bonnes décisions, j'ai mes critères bien définis !"
-• MES 6 CRITÈRES : "Délai, couverture besoin, risque technique, dette, impact UX, coût"
-• PROCESSUS CARRÉ : "J'identifie → j'analyse → j'évalue → je décide → je suis - méthodique !"
-• TRANSPARENCE TOTALE : "Tout transparent avec la cliente, tout documenté, tout tracé"
-• AVANTAGE : "Comme ça, pas de décision à l'aveugle en cas de pépin ! 🎯"
-• EFFICACITÉ : "Méthode qui marche pour arbitrer sereinement"
+NOTES ORAL - Cas d'arbitrage concret :
+• CONTEXTE TENDU : "Sprint S4, retard de 3 jours sur l'auth - dilemme ! 😰"
+• PROBLÉMATIQUE CLAIRE : "Dashboard fonctionnel OU conformité RGPD ? Pas les deux à temps !"
+• OPTION 1 RISQUÉE : "Dashboard d'abord = démo OK mais risque juridique énorme"
+• OPTION 2 SÉCURISÉE : "RGPD prioritaire = légal nickel mais démo décalée"
+• OPTION 3 COÛTEUSE : "Renforcer l'équipe = tout OK mais 2k€ + risques"
+• MATRICE DÉCISION : "J'ai pesé chaque option avec mes critères - méthodique !"
+-->
+
+---
+
+# Arbitrage (C3.2.2) — Décision argumentée
+
+<div class="card">
+
+### Décision : Option 2 - RGPD prioritaire
+
+**Argumentation** : Risque juridique inacceptable (30% du poids) vs 1 semaine de décalage
+
+**Résolution problématique** :
+
+- ✅ Conformité légale assurée
+- ✅ Architecture propre maintenue
+- ✅ Cliente informée et adhésion obtenue
+
+**Résultats** : Problématique résolue, projet sécurisé juridiquement, relation client préservée
+
+</div>
+
+<!--
+NOTES ORAL - Grillultats (1:30) :
+• MATRICE APPLIQUÉE : "J'ai chiffré chaque option - Option 2 gagne 7.95/10 !"
+• DÉCISION CLAIRE : "RGPD prioritaire - risque juridique inacceptable vs 1 semaine décalage"
+• COMMUNICATION CLÉS : "J'ai expliqué les enjeux légaux - elle a adhéré !"
+• RÉSULTATS POSITIFS : "Conformité + cliente satisfaite de ma transparence ! 🎯"
+• LEÇON : "Anticiper dépendances légales dès début projet"
+• TRANSITION : "Cette expérience m'a appris l'importance communication..."
 -->
 
 ---
 
 # Affectation des missions (C3.3.1)
 
-<div class="grid grid-cols-2 gap-8">
-
-<div class="card">
-
-### Équipe
-
-**1 développeur** : Adrien Poirier
-
-### Répartition des responsabilités
-
-| Domaine             | Responsabilité |
-| ------------------- | -------------- |
-| **Conception/UX**   | R/A            |
-| **Front/Back/DB**   | R/A            |
-| **Tests/Qualité**   | R/A            |
-| **DevOps/CI/CD**    | R/A            |
-| **Relation client** | R/A            |
-
-</div>
-
-<div class="card">
-
-### Auto-organisation
-
-- **Priorisation** : Product Backlog ordonné
-- **Planification** : Sprint Planning hebdo
-- **Exécution** : WIP ≤ 2, focus
-- **Adaptation** : Sprint Retrospective
-
-### Prise en compte du handicap
-
-- **Accessibilité produit** : WCAG 2.1 AA, navigation clavier, contrastes conformes
-- **Organisation inclusive** :
-  - Documentation accessible et lisible
-  - Enregistrements des Sprint Reviews
-  - Sous-titres automatiques Google Meet
-  - Aménagement réunions si nécessaire
-- **Sensibilité** aux besoins des personnes en situation de handicap
-
-</div>
-
-</div>
-
-<!--
-NOTES ORAL - Affectation des missions :
-• MULTI-CASQUETTES : "En solo, je porte TOUTES les casquettes : designer, développeur, testeur, déployeur, client ! 🎩"
-• ORGANISATION TOP : "Ça demande une organisation au poil !"
-• PRIORISATION SMART : "Je priorise avec ma liste bien rangée, je planifie chaque semaine"
-• FOCUS LASER : "J'exécute en me limitant à 2 tâches max - sinon je me disperse ! 🎯"
-• AMÉLIORATION CONTINUE : "Je m'améliore grâce aux rétros - toujours mieux !"
-• SITE ACCESSIBLE : "Mon site respecte les standards : navigation clavier, contrastes nickel"
-• ORGANISATION INCLUSIVE : "Docs claires, réunions enregistrées, sous-titres Google Meet"
-• ADAPTATION : "Je peux adapter les réunions si besoin - flexibilité !"
-• SENSIBILITÉ HANDICAP : "Démarche globale pour l'inclusion - c'est important ! 🤝"
--->
-
----
-
-# Styles managériaux utilisés (C3.3.1)
-
-<div class="grid grid-cols-2 gap-8 text-sm equal-cols">
+<div class="grid grid-cols-3 gap-6 text-sm">
 
 <div class="card compact">
 
-<strong>🤝 Participatif</strong>
+### Équipe & RACI
 
-- Co-construction contenus vitrine en Review
-- Validation UX/fonctionnalités
+**1 développeur** : Adrien Poirier
+
+| Domaine         | Resp. |
+| --------------- | ----- |
+| Conception/UX   | R/A   |
+| Dev Full-Stack  | R/A   |
+| Tests/Qualité   | R/A   |
+| DevOps/CI/CD    | R/A   |
+| Relation client | R/A   |
+
+</div>
+
+<div class="card compact">
+
+### Management
+
+**Styles** : Participatif (défaut), Directif (urgence), Persuasif (arbitrage), Délégatif (validation)
+
+**Conflits** : Écoute active, critères objectifs, décision documentée
+
+**Auto-organisation** : Backlog ordonné, WIP ≤ 2, Sprint Planning, Retrospective
+
+</div>
+
+<div class="card compact">
+
+### Inclusivité
+
+**Produit**
+
+- WCAG 2.1 AA
+- Navigation clavier
+- Focus visibles
 
 </div>
 
 </div>
 
 <!--
-NOTES ORAL - Style managérial participatif :
-• PARTICIPATIF : "Mon style principal : PARTICIPATIF ! On fait ensemble 🤝"
-• CO-CONSTRUCTION : "Je co-construis les contenus vitrine avec la cliente - teamwork !"
-• VALIDATION COMMUNE : "On valide ensemble l'UX et les fonctionnalités - pas d'imposé !"
-• ÉCOUTE ACTIVE : "Approche bienveillante, je suis à l'écoute de ses vrais besoins"
-• LEADERSHIP TECHNIQUE : "Je guide côté technique mais je partage mon expertise"
-• ADAPTATION CONTEXTE : "J'adapte selon le moment : directif si urgence, délégatif pour validation"
-• FLEXIBILITÉ : "Chaque situation a son approche - c'est ça la richesse ! 🌈"
+NOTES ORAL - Management complet (1:30) :
+• AFFECTATION : "Je couvre conception, dev, QA, CI/CD, relation client - multi-casquettes !"
+• HANDICAP ORGANISATION : "Réunions sous-titrées, docs lisibles, replays, aménagements horaires"
+• HANDICAP PRODUIT : "Conformité WCAG 2.1 AA, navigation clavier, focus visibles"
+• STYLES MANAGÉRIAUX : "Directif pour urgences, persuasif pour RGPD vs Dashboard, participatif par défaut, délégatif pour validation métier"
+• GESTION CONFLITS : "Écoute active, reformulation, critères objectifs, décision time-boxed documentée"
+• SITUATIONS DIFFICILES : "Écoute lors désaccords priorités, empathie contraintes métier, directivité si nécessaire"
+• COMMUNICATION : "Reviews en visio, CR par email, échanges Trello/GitHub, doc dans le repo"
 -->
 
 ---
@@ -822,7 +726,6 @@ NOTES ORAL - Style managérial participatif :
 
 #### À améliorer 🔄
 
-- Anticipation des dépendances
 - Planification plus fine des contraintes légales
 
 </div>
@@ -861,20 +764,9 @@ NOTES ORAL - Analyse critique :
 
 **Sprint Reviews bi-mensuelles** (visio/présentiel)
 
-- Ordre du jour structuré
 - Démo Preview/Prod
 - Décisions documentées
 - Prochaines étapes claires
-
-</div>
-
-<div class="card compact">
-
-### Asynchrone
-
-- **E-mail** : CR formels, jalons
-- **Trello** : commentaires, checklists
-- **GitHub** : discussions techniques
 
 </div>
 
@@ -911,47 +803,45 @@ NOTES ORAL - Outils de communication :
 
 # Grille d'évaluation des compétences (C3.3.2)
 
-<div class="card table-sm">
+<div class="grid grid-cols-2 gap-6 text-sm">
 
-| Compétence            | Niveau actuel | Cible | Preuves / Commentaires                                         |
-| --------------------- | ------------- | ----- | -------------------------------------------------------------- |
-| **Next.js / React**   | 3             | 4     | Vitrine + Dashboard en prod ; routing app dir ; Server Actions |
-| **TypeScript strict** | 3             | 4     | `tsc --noEmit` clean ; types Domain ; Zod schemas alignés      |
-| **Prisma / SQL**      | 2             | 3     | Migrations `prisma migrate` ; indexations ; seed contrôlé      |
-| **Tests (Jest/RTL)**  | 2             | 3     | 1557/1557 tests ; 56.64% coverage → 70% visé                   |
+<div class="card compact table-xs">
+
+### Techniques
+
+| Compétence        | Actuel | Cible | Status      |
+| ----------------- | ------ | ----- | ----------- |
+| **Next.js/React** | 3      | 4     | ✅ Prod     |
+| **TypeScript**    | 3      | 4     | ✅ Strict   |
+| **Prisma/SQL**    | 2      | 3     | 🔄 Progress |
+| **Tests**         | 2      | 3     | 📈 56→70%   |
+
+</div>
+
+<div class="card compact table-xs">
+
+### Qualité & Gestion
+
+| Compétence    | Actuel | Cible | Status     |
+| ------------- | ------ | ----- | ---------- |
+| **A11y WCAG** | 3      | 4     | ✅ 100/100 |
+| **CI/CD**     | 3      | 4     | ✅ Auto    |
+| **RGPD**      | 2      | 3     | 🔄 DPA     |
+| **Scrum**     | 3      | 4     | ✅ S1→S6   |
+
+</div>
 
 </div>
 
 <!--
-NOTES ORAL - Grille compétences (1/2) :
-• AUTO-ÉVALUATION : "J'ai fait le bilan honnête de mes compétences ! 📊"
-• NEXT.JS/REACT : "Niveau 3 → 4 - vitrine + dashboard en prod, routing moderne, Server Actions"
-• TYPESCRIPT : "Niveau 3 → 4 - code clean sans erreur, types partout, schémas Zod nickel"
-• PRISMA/SQL : "Niveau 2 → 3 - migrations maîtrisées, indexations, seed contrôlé"
-• TESTS : "Niveau 2 → 3 - 1557 tests au vert, 56% coverage → objectif 70% ! 🎯"
-• PROGRESSION : "Chaque compétence a sa cible - progression continue !"
--->
-
----
-
-<div class="card table-sm">
-
-| Compétence                    | Niveau actuel | Cible | Preuves / Commentaires                                    |
-| ----------------------------- | ------------- | ----- | --------------------------------------------------------- |
-| **A11y (WCAG)**               | 3             | 4     | Pa11y=0 ; Lighthouse A11y=100 ; focus & nav clavier       |
-| **CI/CD Vercel**              | 3             | 4     | Preview par PR ; `VERCEL_GIT_COMMIT_SHA` exposé           |
-| **RGPD & sécurité**           | 2             | 3     | Registre, DPA (Vercel/Sentry/Resend/UploadThing), headers |
-| **Gestion de projet (Scrum)** | 3             | 4     | Sprints S1→S6 ; Reviews ; burndown ; vélocité             |
-
-</div>
-
-<!--
-NOTES ORAL - Grille compétences (2/2) :
-• ACCESSIBILITÉ : "Niveau 3 → 4 - Pa11y zéro erreur, Lighthouse 100/100, navigation clavier top !"
-• CI/CD : "Niveau 3 → 4 - Preview auto par PR, variables d'env exposées, déploiement fluide"
-• RGPD/SÉCURITÉ : "Niveau 2 → 3 - registre établi, contrats fournisseurs, headers sécurisés"
-• SCRUM : "Niveau 3 → 4 - 6 sprints exécutés, reviews régulières, métriques suivies"
-• BILAN : "Progression sur tous les fronts - c'est motivant ! 🚀"
+NOTES ORAL - Grille compétences complète :
+• AUTO-ÉVALUATION : "Voici mon bilan honnête de compétences - tableau complet ! 📊"
+• TECHNIQUES SOLIDES : "Next.js/React niveau 3→4, TypeScript propre, Prisma maîtrisé"
+• TESTS PROGRESSION : "1557 tests au vert, 56% coverage → objectif 70% ! 🎯"
+• QUALITÉ EXCELLENTE : "Accessibilité Pa11y parfaite, CI/CD Vercel fluide"
+• PROJET MANAGEMENT : "Scrum niveau 3→4 - 6 sprints exécutés, métriques suivies"
+• AXES AMÉLIORATION : "Focus RGPD niveau 3, tests e2e, observabilité renforcée"
+• AMBITION CLAIRE : "Progression continue sur tous les fronts ! 🚀"
 -->
 
 ---
@@ -962,17 +852,17 @@ NOTES ORAL - Grille compétences (2/2) :
 
 <div>
 
-### Écarts clés identifiés
+### Écarts & Plan d'action
 
-- **Tests** : intégration/e2e manquants, coverage < 70%
-- **Prisma** : requêtes avancées, transactions, performance
-- **Pilotage** : KPIs fonctionnels (taux achèvement, délais)
+**Écarts identifiés** : Tests e2e, Coverage < 70%, RGPD complet
 
-### Priorités de développement
+**Priorités** :
 
-1. **Tests e2e** : Playwright (parcours Visiteur & Admin)
-2. **Observabilité** : Sentry alerting, releases, traces
-3. **RGPD** : registre complet, DPA, minimisation
+1. Tests e2e Playwright
+2. Observabilité Sentry
+3. RGPD registre complet
+
+**Objectifs mesurables** : Coverage ≥ 70% (30/06), Erreurs < 1%
 
 </div>
 
@@ -998,14 +888,11 @@ NOTES ORAL - Écarts & priorités :
 
 ### Formations & pratique
 
-- **Formations** : Playwright (1/2j), Prisma avancé, A11y WCAG 2.2, RGPD
-- **Pratique** : pair-review externe, objectifs trimestriels, actions rétro
+- **Formations** : Tests, A11y WCAG 2.2, RGPD, SEO
 
 ### Objectifs datés & mesurables
 
-- **Coverage ≥ 70%** d'ici 30/06
-- **2 parcours e2e** (Visiteur, Admin) stables en S6
-- **Erreurs Sentry < 1%** sur 30 jours glissants
+- **Coverage ≥ 70%**
 
 </div>
 
@@ -1031,18 +918,7 @@ NOTES ORAL - Plan de développement :
 
 ### Format & fréquence
 
-**CR e-mail structuré** : faits → décisions → risques → prochaines étapes
-
-**Fréquence** : après chaque Review + jalons • **Stockage** : e-mails + README
-
-### Exemple CR anonymisé
-
-**Objet** : CR Review S3 - Formulaire contact validé
-
-- **Faits** : Formulaire opérationnel, upload 3×4MB OK
-- **Décisions** : Validation S4 (auth), priorisation rôles
-- **Risques** : Quota UploadThing (1.2GB/2GB)
-- **Next** : S4 auth Better Auth, rôles, protection routes
+**e-mail structuré à la fin de chaque sprint review** : faits → décisions → risques (si besoin) → prochaines étapes
 
 </div>
 
@@ -1063,27 +939,27 @@ NOTES ORAL - Comptes rendus & décisions :
 
 # Points de validation (C3.4.1)
 
-### Jalons & Reviews (dates réelles)
+### Jalons & Reviews (projet planifié)
 
 <div class="grid grid-cols-2 gap-6">
 
 <div>
 
-**J1** (fin Mars) : Vitrine/SEO validés _(Review S2)_
+**J1** (29/03/25) : Vitrine/SEO validés ✅ _(Review S2)_
 
-**J2** (mi-Avril) : Formulaire + e-mail OK _(Review S3)_
+**J2** (12/04/25) : Formulaire + e-mail OK ✅ _(Review S3)_
 
-**J3** (fin Avril) : Auth & rôles _(Review S4)_
+**J3** (26/04/25) : Auth & rôles ✅ _(Review S4)_
 
 </div>
 
 <div>
 
-**J4** (mi-Mai) : Dashboard (filtres, statuts, archives) _(Review S5)_
+**J4** (10/05/25) : Dashboard complet ✅ _(Review S5)_
 
-**J5** (fin Mai) : Qualité (Lighthouse/Pa11y) OK _(Review S6)_
+**J5** (24/05/25) : Qualité (Lighthouse/Pa11y) OK ✅ _(Review S6)_
 
-**J6** (fin Mai) : Mise en production + démo finale
+**J6** (24/05/25) : Mise en production + démo finale ✅
 
 </div>
 
@@ -1135,22 +1011,15 @@ NOTES ORAL - Processus de validation :
 
 # Indicateurs de satisfaction (C3.4.1)
 
-<div class="grid grid-cols-1 gap-6">
+<div class="card">
 
-<div>
+### Satisfaction cliente
 
-### Satisfaction & usage
+**Questionnaire post-usage** envoyé après mise en production :
 
-- **NPS** post-démo • **Questionnaire 1–5** après Review
-- **Taux d'achèvement** formulaire • **Délai** création → traité
-- **Taux rebond** pages vitrine
-
-### Qualité technique
-
-- **Erreurs Sentry** : < 1%
-- **Lighthouse** : Perf ≥ 90, A11y 100, SEO 100, BP 100
-
-</div>
+- Facilité d'utilisation du site (1-5)
+- Qualité du processus de développement (1-5)
+- Respect des délais et communication (1-5)
 
 </div>
 
@@ -1165,28 +1034,12 @@ NOTES ORAL - Indicateurs de satisfaction :
 
 ---
 
-# Améliorations & évolutions (C3.4.1)
-
-<div class="grid grid-cols-1 gap-6">
-
-<div>
-
-### Boucle d'amélioration
-
-**Retour client** → **Issue GitHub** → **Sprint Backlog** → **PR** → **Preview** → **Prod**
-
-### Exemples & roadmap
-
-- **Corrigé** : Issue #1 (BUG-001 - footer/email mobile) en S2
-  - Problème : débordement horizontal sur mobile < 375px
-  - Solution : `word-break: break-all` + classes Tailwind responsive
-  - Commit : e9deaf5
+# évolutions futures (C3.4.1)
 
 ### Roadmap produit
 
 - **S6** : Tests e2e, RGPD, performance
-- **Q3 2025** : Module Devis
-- **Q4 2025** : Notifications, export, API
+- Module Devis
 
 </div>
 
@@ -1206,9 +1059,7 @@ NOTES ORAL - Améliorations & évolutions :
 
 <div class="text-center h-full flex flex-col justify-center">
 
-# Démo (C3.4.2) — Scénario Visiteur
-
-## Scénario Visiteur
+# Démo (C3.4.2)
 
 <div class="mt-6 text-sm muted">
   <p>URL: https://dietetique-et-interventions.manonchaillou.fr</p>
@@ -1235,42 +1086,6 @@ NOTES ORAL - Démo Scénario Visiteur (4min) :
 • FORMULAIRE SMART : "Formulaire avec validation live - je remplis et ça vérifie direct !"
 • UPLOAD CONTRÔLÉ : "Max 3 fichiers 4MB, jpg/png/pdf - démo des limites en live"
 • CONFIRMATION : "Message de succès + email auto à la diététicienne - nickel ! ✉️"
--->
-
----
-
-<div class="text-center h-full flex flex-col justify-center">
-
-# Démo (C3.4.2) — Scénario Admin
-
-## Scénario Admin
-
-<div class="mt-6 text-sm muted">
-  <p>Compte test: jury@ynov.com • mdp: d85pm832</p>
-</div>
-
-### Parcours
-
-Dashboard → Contact-requests → Détail → Statut → Archivage
-
-<div class="mt-4 text-sm text-gray-600">
-  <p>📊 Tri rapide • Traçabilité • Workflow optimisé</p>
-</div>
-
-</div>
-
-<!--
-NOTES ORAL - Démo Scénario Admin (4min) :
-• SWITCH ADMIN : "Maintenant, hop ! On passe côté administration ! 🔐"
-• IDENTIFIANTS : "Compte test : jury@ynov.com, mdp : d85pm832 - rentrons !"
-• DASHBOARD ADMIN : "Et voilà l'espace privé ! Connexion sécurisée avec rôles - classe !"
-• VUE D'ENSEMBLE : "Liste complète des demandes avec TOUTES les infos - tableau de bord complet"
-• FILTRES PUISSANTS : "Je filtre par statut, je recherche, je trie - tout est fluide !"
-• DÉTAIL COMPLET : "Clic sur une demande = coordonnées + fichiers téléchargeables - tout y est !"
-• GESTION STATUTS : "Je change le statut en live : 'Nouveau' → 'En cours' → 'Traité' - workflow !"
-• TRAÇABILITÉ TOTALE : "Chaque modif est horodatée - on sait QUI a fait QUOI et QUAND ! 🕰️"
-• ARCHIVAGE LÉGAL : "Archivage sans suppression - respect RGPD et obligations"
-• ACCESSIBILITÉ : "Navigation clavier, focus visibles - accessible à tous ! ♿️"
 -->
 
 ---
@@ -1304,25 +1119,8 @@ NOTES ORAL - Démo Scénario Admin (4min) :
 - **SEO** : référencement optimal
 - **Maintenance** : code lisible, testé
 
-### Validation finale
-
-**"Version utilisable"** pour validation commanditaire
-
 </div>
 
 </div>
-
-<!--
-NOTES ORAL - Critères de validation (2min conclusion) :
-• FONCTIONNEL VALIDÉ : "Cette démo valide TOUT ce qui était demandé : fonctionnalités OK, robuste, tracé ✅"
-• TECHNIQUE AU TOP : "Côté technique c'est nickel : accessible clavier, performant, sécurisé"
-• QUALITÉ PARFAITE : "UX fluide, design responsive partout, SEO au top, code propre ! 🏆"
-• VALIDATION CLIENT : "Cette version finale a été validée par la cliente - mission accomplie !"
-• OBJECTIFS ATTEINTS : "Répond parfaitement à tous ses besoins - bullseye ! 🎯"
-• BILAN PROJET : "Ces 3 mois m'ont permis de vous prouver que je sais mener un projet de A à Z !"
-• RÉUSSITE TOTALE : "Scrum adapté, qualité excellente, délais respectés, coûts à 0€ ! 💪"
-• COMPÉTENCES DÉMONTRÉES : "Toutes les compétences du référentiel couvertes avec exemples concrets"
-• MERCI ! : "Merci pour votre attention ! Place aux questions ! 🙋‍♂️"
--->
 
 ---
